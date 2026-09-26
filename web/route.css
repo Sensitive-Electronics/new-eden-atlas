@@ -1,0 +1,454 @@
+.route-planner {
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  background: #0a0f12;
+  padding: 11px;
+}
+
+.route-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: .66rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.route-heading button {
+  width: 28px;
+  height: 25px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.route-heading button:hover { color: white; border-color: #5d7585; }
+.route-fields { display: grid; gap: 6px; }
+
+.route-fields input,
+.route-fields select {
+  width: 100%;
+  min-width: 0;
+  height: 34px;
+  border: 1px solid var(--line);
+  background: #080c0f;
+  color: var(--text);
+  padding: 0 9px;
+  outline: 0;
+  font-size: .78rem;
+}
+
+.route-fields input:focus,
+.route-fields select:focus { border-color: #5d7585; }
+
+.route-actions {
+  display: grid;
+  grid-template-columns: 1fr 35px;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.route-clear {
+  height: 35px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+.route-clear:hover { color: white; border-color: #5d7585; }
+
+.route-calculate {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #6a5e38;
+  background: #191711;
+  color: #ead889;
+  cursor: pointer;
+  font-size: .73rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.route-calculate:hover { border-color: var(--gold); background: #211e15; }
+.route-error { margin: 8px 1px 0; color: #e68a8a; font-size: .68rem; line-height: 1.35; }
+.route-error:empty { display: none; }
+.route-regions { margin: 0; color: var(--muted); font-size: .72rem; line-height: 1.5; }
+
+.route-step {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  border: 0;
+  border-bottom: 1px solid #1b252b;
+  background: transparent;
+  padding: 8px 1px;
+  color: #c7d0d5;
+  text-align: left;
+  cursor: pointer;
+  font-size: .78rem;
+}
+
+.route-step:hover { background: #131c21; color: white; }
+.route-step-index { color: #596a74; font: .63rem monospace; }
+.route-step-meta { color: var(--muted); font: .63rem monospace; }
+.route-step .sec-dot { justify-self: end; }
+.route-leg-kind { display: block; color: #b5c2cc; font: .65rem monospace; margin-top: 3px; }
+
+#scoutList .corridor-row { grid-template-columns: minmax(0, 1fr); }
+#scoutList .corridor-open strong,
+#scoutList .corridor-open span { white-space: normal; overflow-wrap: anywhere; }
+
+/* Route highlighting on the maps.
+   The overlay is drawn as its own layer rather than by restyling the existing
+   edges, so a route reads above the gate mesh without disturbing the
+   constellation filter's dimming. Magenta is deliberately outside the security
+   palette: no security class or region type uses it, so a highlighted route
+   can never be misread as a security or sovereignty statement. */
+.route-layer { pointer-events: none; }
+
+.route-halo {
+  fill: none;
+  stroke: #ff5fa2;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .16;
+  vector-effect: non-scaling-stroke;
+}
+
+.route-line {
+  fill: none;
+  stroke: #ff5fa2;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 8 5;
+  vector-effect: non-scaling-stroke;
+  animation: route-flow 1.15s linear infinite;
+}
+
+@keyframes route-flow { to { stroke-dashoffset: -13; } }
+
+.route-badge {
+  fill: #1b0e15;
+  stroke: #ff5fa2;
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.route-badge.endpoint { fill: #ff5fa2; }
+
+.route-badge-text {
+  fill: #ffd9ea;
+  font: 700 9px monospace;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.route-badge.endpoint + .route-badge-text { fill: #2a0a19; }
+
+.system-node.on-route rect {
+  stroke: #ff5fa2;
+  stroke-width: 2.2;
+}
+
+.system-node.route-endpoint rect { stroke-width: 3.2; }
+
+.region-node.on-route circle {
+  stroke: #ff5fa2;
+  stroke-width: 2.4;
+}
+
+.region-node.route-endpoint circle { stroke-width: 3.4; }
+
+/* Capital chains use the same legible overlay geometry but a separate violet
+   signal, so an FC cannot mistake a jump plan for a stargate route. */
+.jump-overlay .route-halo { stroke: #9d8cff; opacity: .2; }
+.jump-overlay .route-line { stroke: #9d8cff; stroke-dasharray: 3 5; }
+.jump-overlay .route-badge { fill: #151226; stroke: #9d8cff; }
+.jump-overlay .route-badge.endpoint { fill: #9d8cff; }
+.jump-overlay .route-badge-text { fill: #e3deff; }
+.jump-overlay .route-badge.endpoint + .route-badge-text { fill: #120d2b; }
+.system-node.on-jump rect { stroke: #9d8cff; stroke-width: 2.2; }
+.system-node.on-jump.route-endpoint rect { stroke-width: 3.2; }
+.region-node.on-jump circle { stroke: #9d8cff; stroke-width: 2.4; }
+.region-node.on-jump.route-endpoint circle { stroke-width: 3.4; }
+
+/* A route stays fully legible while a constellation filter is active. */
+.route-layer .dimmed,
+.system-node.on-route.dimmed,
+.system-node.on-jump.dimmed,
+.region-node.on-jump.dimmed,
+.region-node.on-route.dimmed { opacity: 1 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .route-line { animation: none; stroke-dasharray: none; }
+}
+
+/* Avoid list. Styled to match the tactical panel so the rail reads as one
+   system of controls. */
+.route-avoid {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  background: #080c0f;
+}
+
+.route-avoid summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 10px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: .64rem;
+  letter-spacing: .12em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.route-avoid summary::-webkit-details-marker { display: none; }
+.route-avoid summary::after { content: "+"; color: #667781; font: .9rem monospace; }
+.route-avoid[open] summary::after { content: "\2212"; }
+.route-avoid-body { display: grid; gap: 6px; border-top: 1px solid var(--line); padding: 10px; }
+
+/* Not checkboxes. A checkbox given width:100% and height:32px stretches across
+   the shelf and pushes its own label out of the panel, which is what happened
+   to the wormhole opt-in. */
+.route-avoid-body input:not([type="checkbox"]) {
+  width: 100%;
+  min-width: 0;
+  height: 32px;
+  border: 1px solid var(--line);
+  background: #06090b;
+  color: var(--text);
+  padding: 0 9px;
+  outline: 0;
+  font-size: .76rem;
+}
+
+.route-avoid-body input:focus { border-color: #5d7585; }
+.route-avoid-note { margin: 1px 0 0; color: #5d6d77; font-size: .63rem; line-height: 1.4; }
+.route-range { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+
+.route-range label {
+  display: grid;
+  gap: 3px;
+  color: var(--muted);
+  font-size: .6rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+/* An active avoid list is announced in the summary, because a filter you
+   cannot see is a filter you will forget you set. */
+.route-avoid-count {
+  margin-left: auto;
+  margin-right: 8px;
+  color: #c9d3d9;
+  font: .62rem monospace;
+  letter-spacing: 0;
+}
+
+/* Excluded space is greyed and dashed rather than given a colour of its own.
+   Every hue on this map already carries security or region meaning, and
+   "excluded" is a statement about the query, not about the space. */
+.system-node.excluded rect,
+.region-node.excluded circle {
+  stroke: #8b97a0;
+  stroke-dasharray: 4 3;
+  opacity: .45;
+}
+
+.system-node.excluded .system-name,
+.system-node.excluded .system-info { opacity: .4; }
+.region-node.excluded text { opacity: .45; }
+
+/* Saved corridors. */
+.corridor-save { display: grid; grid-template-columns: 1fr auto; gap: 6px; }
+
+.corridor-save input {
+  width: 100%;
+  min-width: 0;
+  height: 34px;
+  border: 1px solid var(--line);
+  background: #06090b;
+  color: var(--text);
+  padding: 0 9px;
+  outline: 0;
+  font-size: .76rem;
+}
+
+.corridor-save input:focus { border-color: #5d7585; }
+.corridor-list { display: grid; max-height: 188px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #33424c transparent; }
+.corridor-list:empty { display: none; }
+
+.corridor-row {
+  display: grid;
+  grid-template-columns: 1fr 26px;
+  align-items: center;
+  border-bottom: 1px solid #1b252b;
+}
+
+.corridor-open {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+  border: 0;
+  background: transparent;
+  padding: 8px 2px;
+  color: #c7d0d5;
+  text-align: left;
+  cursor: pointer;
+}
+
+.corridor-open:hover { color: white; }
+.corridor-open strong { font-size: .77rem; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.corridor-open span { color: var(--muted); font: .62rem monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.corridor-drop {
+  height: 26px;
+  border: 0;
+  background: transparent;
+  color: #5d6d77;
+  cursor: pointer;
+  font-size: .72rem;
+}
+
+.corridor-drop:hover { color: #e68a8a; }
+
+/* A character whose last refresh failed. The row still shows the character -
+   the credential may well still be good - but the reason has to read as a
+   warning rather than as another line of detail, which is what it did while
+   this class was emitted and never defined. */
+.corridor-stale { color: var(--orange); }
+
+/* A character's portrait, above their name.
+   Sized and framed even while empty, so the row does not jump when the picture
+   arrives - the image is filled in after the list is already on screen, and a
+   layout that reflows underneath a pilot's cursor is worse than a slow one. */
+.vault-portrait {
+  width: 64px;
+  height: 64px;
+  border-radius: 3px;
+  background: #121a1f;
+  border: 1px solid #1b252b;
+  object-fit: cover;
+  margin-bottom: 3px;
+}
+.corridor-hint { align-self: center; color: #5d6d77; font-size: .62rem; line-height: 1.3; }
+.corridor-empty { color: #5d6d77; font-size: .66rem; padding: 7px 2px; }
+
+/* Avoided, not excluded. A soft entry is still traversable, and marking it the
+   same as an impossible system would overstate what the pilot asked for: they
+   said prefer around, not never. Dashed like exclusion, because both are
+   statements about the query - but legible rather than faded out, since an
+   avoided system is one the route may still have to use. */
+.system-node.avoided rect,
+.region-node.avoided circle {
+  stroke: #d8a657;
+  stroke-dasharray: 3 3;
+}
+
+.system-node.avoided .system-name { fill: #d8a657; }
+
+/* Two ends and a button, rather than the one name and a button a saved
+   corridor takes. */
+.corridor-save.bridge-save { grid-template-columns: 1fr 1fr auto; }
+
+/* A row that only reports. A bridge or an avoided system is not opened the way
+   a saved corridor is, so it must not offer a pointer that does nothing. */
+span.corridor-open { cursor: default; }
+span.corridor-open:hover { color: #c7d0d5; }
+
+/* The avoidance switch. On is the resting state and is deliberately quiet; off
+   is the one worth noticing, because a suspended list and an empty list look
+   the same everywhere else. */
+.avoid-toggle {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #1b2228;
+  padding: 6px 8px;
+  color: #c7d0d5;
+  font: .66rem monospace;
+  letter-spacing: .04em;
+  cursor: pointer;
+}
+
+.avoid-toggle:hover { border-color: #5d7585; color: white; }
+.avoid-toggle.off { border-color: #d8a657; color: #d8a657; }
+
+/* Kept, not applied. Struck rather than faded: faded reads as "expiring", and
+   these have not expired - they are being ignored on purpose. */
+.corridor-row.suspended .corridor-open strong { text-decoration: line-through; opacity: .6; }
+.corridor-row.suspended .corridor-open span { opacity: .5; }
+
+/* Hostile reach. Red, and deliberately the only red on the map that is not a
+   security colour - this is the one overlay that means danger rather than
+   category. Drawn as an outline so it can coexist with a route marking: a
+   system on your route and inside a hostile envelope is the most important
+   thing the map can say, and either marking hiding the other would lose it. */
+.system-node.threatened rect,
+.region-node.threatened circle {
+  stroke: #e2565f;
+  stroke-width: 1.6;
+}
+
+.system-node.threatened .system-name { fill: #f0888e; }
+
+/* Ambient state. Both are fills rather than outlines, because the outline is
+   already spoken for by hostile reach and a system can carry both at once -
+   infested AND inside a hostile envelope is two separate reasons to think
+   twice, and one marking hiding the other would lose one of them. */
+.system-node.infested rect,
+.region-node.infested circle { fill: #3a1f3d; }
+.system-node.infested .system-name { fill: #e79fe0; }
+
+.contested-mark { display: none; fill: none; stroke: #f1ddb2; stroke-width: 1.8; stroke-linecap: round; pointer-events: none; }
+.system-node.contested:not(.compact) > .contested-label,
+.system-node.contested.compact > .contested-dot { display: block; }
+
+/* Infested wins where a system is both: an incursion suppresses everything in
+   the constellation, which is the larger fact. */
+.system-node.infested.contested rect { fill: #3a1f3d; }
+
+/* The kill-weighting control. A route setting, so it sits with the route
+   fields rather than with the live layers it reads from. */
+.route-heat { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 8px; margin-top: 6px; }
+.route-heat label { color: var(--muted); font: .66rem monospace; letter-spacing: .04em; }
+.route-heat select {
+  /* The grid gives this column 1fr; without these the select sizes to its
+     longest option instead and runs past the edge of the shelf. */
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #1b2228;
+  padding: 5px 6px;
+  color: #c7d0d5;
+  font: .66rem monospace;
+}
+
+/* Sovereignty timers. A fight happening now and one scheduled for later are
+   different problems, so they are different colours rather than one "timer"
+   marking - and both are borders, because the fill already carries incursion
+   and faction-warfare state and a system can be in all of them at once. */
+.system-node.timer-live rect { stroke: #ff4d4d; stroke-width: 2.2; }
+.system-node.timer-soon rect { stroke: #ff9c4d; stroke-width: 1.8; stroke-dasharray: 5 3; }
+.system-node.timer-live .system-name { fill: #ff9a9a; }
+
+/* A two-end bridge form is useful on a wide rail, but three columns reduce
+   each name field to a few characters on a phone. Keep the action compact
+   while allowing both system names to remain fully readable. */
+@media (max-width: 760px) {
+  .corridor-save.bridge-save { grid-template-columns: 1fr auto; }
+  .corridor-save.bridge-save input { grid-column: 1 / -1; }
+  .corridor-save.bridge-save button { grid-column: 2; }
+}

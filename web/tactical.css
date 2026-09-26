@@ -1,0 +1,257 @@
+.tactical-panel {
+  margin-top: 9px;
+  border: 1px solid var(--line);
+  background: #0a0f12;
+}
+
+.tactical-panel > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 11px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: .66rem;
+  letter-spacing: .12em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.tactical-panel > summary::-webkit-details-marker { display: none; }
+.tactical-panel > summary::after { content: "+"; color: #667781; font: .9rem monospace; }
+.tactical-panel[open] > summary::after { content: "−"; }
+.tactical-body { border-top: 1px solid var(--line); padding: 10px 11px 11px; }
+.tactical-row { display: grid; grid-template-columns: 1fr 64px; gap: 6px; margin-top: 6px; }
+
+.tactical-body input,
+.tactical-body select {
+  width: 100%;
+  min-width: 0;
+  height: 34px;
+  border: 1px solid var(--line);
+  background: #080c0f;
+  color: var(--text);
+  padding: 0 9px;
+  outline: 0;
+  font-size: .78rem;
+}
+
+.tactical-body input:focus,
+.tactical-body select:focus { border-color: #5d7585; }
+.tactical-blocks { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 8px; margin: 10px 0; }
+.tactical-blocks label { display: flex; align-items: center; gap: 6px; color: #9aa8b0; font-size: .68rem; }
+.tactical-blocks input { width: 13px; height: 13px; margin: 0; accent-color: var(--gold); }
+.tactical-options { margin: 8px 0 10px; border-block: 1px solid #1b252b; }
+.tactical-options > summary {
+  padding: 8px 1px;
+  color: #73838d;
+  cursor: pointer;
+  font-size: .64rem;
+  letter-spacing: .09em;
+  list-style: none;
+  text-transform: uppercase;
+}
+.tactical-options > summary::-webkit-details-marker { display: none; }
+.tactical-options > summary::after { content: " +"; color: #596872; }
+.tactical-options[open] > summary::after { content: " −"; }
+.tactical-options .tactical-blocks { margin: 0 0 9px; }
+.tactical-actions { display: grid; grid-template-columns: 1fr auto auto; gap: 5px; }
+
+.tactical-run,
+.tactical-icon {
+  height: 34px;
+  border: 1px solid #6a5e38;
+  background: #191711;
+  color: #ead889;
+  cursor: pointer;
+  font-size: .71rem;
+}
+
+.tactical-run { padding: 0 10px; letter-spacing: .05em; text-transform: uppercase; }
+.tactical-icon { width: 35px; border-color: var(--line); background: transparent; color: var(--muted); }
+.tactical-run:hover { border-color: var(--gold); }
+.tactical-icon:hover { border-color: #5d7585; color: white; }
+.tactical-file { display: none; }
+.tactical-error { margin: 8px 1px 0; color: #e68a8a; font-size: .68rem; line-height: 1.35; }
+.tactical-error:empty { display: none; }
+.tactical-time { color: #596872; font: .62rem monospace; }
+.tactical-vector { display: grid; grid-template-columns: 1fr auto; gap: 3px 10px; padding: 9px 1px; border-bottom: 1px solid #1b252b; }
+.tactical-vector button { border: 0; background: none; color: #ced6da; padding: 0; text-align: left; cursor: pointer; font-size: .79rem; }
+.tactical-vector button:hover { color: white; }
+.tactical-vector strong { color: var(--gold); font: .68rem monospace; }
+.tactical-vector small { grid-column: 1 / -1; color: var(--muted); font-size: .65rem; }
+.tactical-note { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.5; }
+
+.command-section { padding: 15px 17px 17px; border-bottom: 1px solid var(--line); background: #0b1115; }
+.command-heading { margin-bottom: 7px; }
+.command-heading h3 {
+  margin: 0 0 4px;
+  color: #c5d0d6;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.command-heading span { color: var(--muted); font-size: .66rem; line-height: 1.35; }
+.command-priority {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 3px 8px;
+  align-items: baseline;
+  border: 0;
+  border-top: 1px solid #253039;
+  background: transparent;
+  padding: 10px 1px;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.command-priority:hover { background: #121b20; }
+.command-priority .command-tag { color: var(--gold); font: .6rem monospace; letter-spacing: .06em; }
+.command-priority strong { color: #edf1f3; font-size: .76rem; font-weight: 600; }
+.command-priority small { grid-column: 2; color: #8998a1; font-size: .65rem; line-height: 1.42; }
+.command-caveat { margin: 8px 0 0; color: #697983; font-size: .61rem; line-height: 1.45; }
+
+/* The one surface in this application a model had any part in choosing, so it
+   does not look like the rows above it.
+
+   The label is its own element carrying real text, not a `::before`. Generated
+   content is not in the DOM, so a copied brief - an FC selecting the panel and
+   pasting it into fleet chat - would arrive with the advisor's sentence sitting
+   unmarked among the deterministic rows. It is a sibling rather than a child so
+   that `#brief-read` still holds exactly what `relations.js` wrote. */
+#brief-read-mark {
+  margin: 9px 0 0;
+  padding: 7px 9px 0;
+  border-left: 2px solid var(--gold);
+  background: rgba(217, 185, 91, .05);
+  color: #93813f;
+  font: .55rem monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+#brief-read {
+  margin: 0;
+  padding: 2px 9px 7px;
+  border-left: 2px solid var(--gold);
+  background: rgba(217, 185, 91, .05);
+  color: #c3ccd2;
+  font-size: .66rem;
+  line-height: 1.5;
+}
+
+/* The switch that turns it on, which sits apart from the four report-shape
+   checkboxes above it for the reason `settings.js` gives. */
+/* Deliberately the same box as its four neighbours above. They are the report
+   shape and this is a decision about whether a model may speak, but a control
+   that renders at browser-default size in the platform accent beside four gold
+   13px boxes reads as an accident rather than as a distinction. The separation
+   is carried by position and by the note beneath it. */
+.tactical-read { display: block; margin-top: 9px; color: var(--muted); font-size: .66rem; }
+.tactical-read input { width: 13px; height: 13px; margin-right: 5px; accent-color: var(--gold); }
+
+.jump-fields { margin-top: 6px; }
+.jump-skills { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 6px; }
+.jump-skills-three { grid-template-columns: 1fr 1fr 1fr; }
+.jump-skills label.inactive { opacity: .4; }
+
+.jump-skills label {
+  display: grid;
+  gap: 3px;
+  color: var(--muted);
+  font-size: .6rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.jump-skills input {
+  width: 100%;
+  min-width: 0;
+  height: 32px;
+  border: 1px solid var(--line);
+  background: #080c0f;
+  color: var(--text);
+  padding: 0 9px;
+  outline: 0;
+  font-size: .78rem;
+}
+
+.jump-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: .68rem;
+  cursor: pointer;
+}
+
+/* Jump range. Violet is unused elsewhere on the map: every other hue already
+   means a security class, a region type, a route or an exclusion. */
+.range-ring {
+  fill: #9d8cff;
+  fill-opacity: .05;
+  stroke: #9d8cff;
+  stroke-width: 1.4;
+  stroke-dasharray: 7 6;
+  vector-effect: non-scaling-stroke;
+  opacity: .85;
+}
+
+.range-origin {
+  fill: none;
+  stroke: #9d8cff;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.range-node {
+  fill: none;
+  stroke: #9d8cff;
+  stroke-width: 1.6;
+  stroke-dasharray: 5 4;
+  vector-effect: non-scaling-stroke;
+  opacity: .9;
+}
+
+.region-node.in-range circle { stroke: #9d8cff; stroke-width: 2.4; }
+.tactical-icon[aria-pressed="true"] { border-color: #9d8cff; color: #c8bdff; }
+
+.jump-leg {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3px 10px;
+  padding: 9px 1px;
+  border-bottom: 1px solid #1b252b;
+}
+
+.jump-leg button {
+  border: 0;
+  background: none;
+  color: #ced6da;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: .78rem;
+}
+
+.jump-leg button:hover { color: white; }
+.jump-leg strong { font: .68rem monospace; color: #c9d3d9; }
+.jump-leg small { grid-column: 1 / -1; color: var(--muted); font-size: .62rem; }
+
+.tactical-subhead {
+  margin: 14px 0 9px;
+  color: #8d9ca5;
+  font-size: .64rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  /* The menu button owns the drawer state. Keyboard focus on Build Brief must
+     not pin the drawer over the result inspector. */
+  .rail:not(.open) { transform: translateX(calc(-100% + 7px)) !important; }
+  .rail.open { transform: translateX(0) !important; }
+}

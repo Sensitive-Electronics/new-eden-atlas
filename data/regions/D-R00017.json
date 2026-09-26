@@ -1,0 +1,689 @@
+{
+  "region": {
+    "region_id": 11000017,
+    "name": "D-R00017",
+    "constellation_ids": [
+      21000162,
+      21000163,
+      21000164,
+      21000165
+    ],
+    "position": [
+      7.751984075340601e+18,
+      1.5394229702968594e+18,
+      -9.780708820372822e+18
+    ],
+    "systems": [
+      31001436,
+      31001440,
+      31001439,
+      31001453,
+      31001450,
+      31001455,
+      31001449,
+      31001456,
+      31001458,
+      31001459,
+      31001445,
+      31001444,
+      31001437,
+      31001446,
+      31001441,
+      31001457,
+      31001452,
+      31001451,
+      31001442,
+      31001448,
+      31001443,
+      31001447,
+      31001435,
+      31001438,
+      31001454
+    ],
+    "constellations": [
+      21000162,
+      21000163,
+      21000164,
+      21000165
+    ],
+    "system_count": 25,
+    "position_2d": null,
+    "bounds_2d": null
+  },
+  "constellations": {
+    "21000162": {
+      "constellation_id": 21000162,
+      "region_id": 11000017,
+      "name": "D-C00162",
+      "solar_system_ids": [
+        31001435,
+        31001436,
+        31001437,
+        31001438,
+        31001439,
+        31001440
+      ],
+      "position": [
+        7.738239144501024e+18,
+        2.6954625516189812e+16,
+        -9.788130126652652e+18
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    },
+    "21000163": {
+      "constellation_id": 21000163,
+      "region_id": 11000017,
+      "name": "D-C00163",
+      "solar_system_ids": [
+        31001441,
+        31001442,
+        31001443,
+        31001444,
+        31001445,
+        31001446,
+        31001447
+      ],
+      "position": [
+        7.745546684434894e+18,
+        1.129785238529331e+16,
+        -9.784227813333105e+18
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    },
+    "21000164": {
+      "constellation_id": 21000164,
+      "region_id": 11000017,
+      "name": "D-C00164",
+      "solar_system_ids": [
+        31001448,
+        31001449,
+        31001450,
+        31001451,
+        31001452,
+        31001453
+      ],
+      "position": [
+        7.773050394263343e+18,
+        9158676996474686.0,
+        -9.776935687373933e+18
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    },
+    "21000165": {
+      "constellation_id": 21000165,
+      "region_id": 11000017,
+      "name": "D-C00165",
+      "solar_system_ids": [
+        31001454,
+        31001455,
+        31001456,
+        31001457,
+        31001458,
+        31001459
+      ],
+      "position": [
+        7.751100078163146e+18,
+        -4568672167756197.0,
+        -9.773541654131597e+18
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    }
+  },
+  "systems": {
+    "31001436": {
+      "system_id": 31001436,
+      "name": "J100806",
+      "region_id": 11000017,
+      "constellation_id": 21000162,
+      "security": -0.99,
+      "position": [
+        7.730826078449028e+18,
+        2.9369904766123428e+16,
+        -9.77763641981004e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001440": {
+      "system_id": 31001440,
+      "name": "J101706",
+      "region_id": 11000017,
+      "constellation_id": 21000162,
+      "security": -0.99,
+      "position": [
+        7.740879104553496e+18,
+        4.432767338348971e+16,
+        -9.795732984806867e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001439": {
+      "system_id": 31001439,
+      "name": "J103110",
+      "region_id": 11000017,
+      "constellation_id": 21000162,
+      "security": -0.99,
+      "position": [
+        7.740636717333323e+18,
+        2.1747506547293468e+16,
+        -9.798610238165492e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001453": {
+      "system_id": 31001453,
+      "name": "J104649",
+      "region_id": 11000017,
+      "constellation_id": 21000164,
+      "security": -0.99,
+      "position": [
+        7.774634172417065e+18,
+        -9668947908626692.0,
+        -9.774767167473943e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001450": {
+      "system_id": 31001450,
+      "name": "J105346",
+      "region_id": 11000017,
+      "constellation_id": 21000164,
+      "security": -0.99,
+      "position": [
+        7.767609310107493e+18,
+        2.7615976353762268e+16,
+        -9.777388091473613e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001455": {
+      "system_id": 31001455,
+      "name": "J105726",
+      "region_id": 11000017,
+      "constellation_id": 21000165,
+      "security": -0.99,
+      "position": [
+        7.753815126661863e+18,
+        -1.2049136430449292e+16,
+        -9.76002279257823e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001449": {
+      "system_id": 31001449,
+      "name": "J111404",
+      "region_id": 11000017,
+      "constellation_id": 21000164,
+      "security": -0.99,
+      "position": [
+        7.764597730566028e+18,
+        -1.2949304809240192e+16,
+        -9.78521183859354e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001456": {
+      "system_id": 31001456,
+      "name": "J111758",
+      "region_id": 11000017,
+      "constellation_id": 21000165,
+      "security": -0.99,
+      "position": [
+        7.747176939632169e+18,
+        3.90353265617827e+16,
+        -9.7725847254371e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001458": {
+      "system_id": 31001458,
+      "name": "J114026",
+      "region_id": 11000017,
+      "constellation_id": 21000165,
+      "security": -0.99,
+      "position": [
+        7.748738667772153e+18,
+        -1.076447421273572e+16,
+        -9.782439663830133e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001459": {
+      "system_id": 31001459,
+      "name": "J115118",
+      "region_id": 11000017,
+      "constellation_id": 21000165,
+      "security": -0.99,
+      "position": [
+        7.745827820028617e+18,
+        -3.385371387207882e+16,
+        -9.783192205094881e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001445": {
+      "system_id": 31001445,
+      "name": "J122656",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.746530663099253e+18,
+        -2.909019552749854e+16,
+        -9.781941148177375e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001444": {
+      "system_id": 31001444,
+      "name": "J133113",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.741595584529976e+18,
+        1.795551903542334e+16,
+        -9.795546361987557e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001437": {
+      "system_id": 31001437,
+      "name": "J133638",
+      "region_id": 11000017,
+      "constellation_id": 21000162,
+      "security": -0.99,
+      "position": [
+        7.738135442296377e+18,
+        5.285490552356558e+16,
+        -9.778796784713755e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001446": {
+      "system_id": 31001446,
+      "name": "J134716",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.742694956445889e+18,
+        6.328295212704728e+16,
+        -9.768815375347184e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001441": {
+      "system_id": 31001441,
+      "name": "J142214",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.756037585460003e+18,
+        5.695547117307963e+16,
+        -9.783804283006505e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001457": {
+      "system_id": 31001457,
+      "name": "J142923",
+      "region_id": 11000017,
+      "constellation_id": 21000165,
+      "security": -0.99,
+      "position": [
+        7.749022280545071e+18,
+        1.6144504103576108e+16,
+        -9.784689405289413e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001452": {
+      "system_id": 31001452,
+      "name": "J150112",
+      "region_id": 11000017,
+      "constellation_id": 21000164,
+      "security": -0.99,
+      "position": [
+        7.780380802462524e+18,
+        -5910383071665580.0,
+        -9.762813583833194e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001451": {
+      "system_id": 31001451,
+      "name": "J154631",
+      "region_id": 11000017,
+      "constellation_id": 21000164,
+      "security": -0.99,
+      "position": [
+        7.779584158345341e+18,
+        -1.3029293554533052e+16,
+        -9.772299463757416e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001442": {
+      "system_id": 31001442,
+      "name": "J155340",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.752144635668518e+18,
+        -2.434618651055318e+16,
+        -9.796702769949899e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001448": {
+      "system_id": 31001448,
+      "name": "J161119",
+      "region_id": 11000017,
+      "constellation_id": 21000164,
+      "security": -0.99,
+      "position": [
+        7.771496191681606e+18,
+        6.889401496915136e+16,
+        -9.789133979111893e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001443": {
+      "system_id": 31001443,
+      "name": "J165326",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.741394336706181e+18,
+        -1.8355141110547164e+16,
+        -9.79865943874593e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001447": {
+      "system_id": 31001447,
+      "name": "J171344",
+      "region_id": 11000017,
+      "constellation_id": 21000163,
+      "security": -0.99,
+      "position": [
+        7.73842902913444e+18,
+        1.2682547510101796e+16,
+        -9.764125316117279e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001435": {
+      "system_id": 31001435,
+      "name": "J224148",
+      "region_id": 11000017,
+      "constellation_id": 21000162,
+      "security": -0.99,
+      "position": [
+        7.737288935954051e+18,
+        -3645370965824092.0,
+        -9.78821687730247e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001438": {
+      "system_id": 31001438,
+      "name": "J231614",
+      "region_id": 11000017,
+      "constellation_id": 21000162,
+      "security": -0.99,
+      "position": [
+        7.741668588419873e+18,
+        1.7073133842490764e+16,
+        -9.789787455117281e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31001454": {
+      "system_id": 31001454,
+      "name": "J234421",
+      "region_id": 11000017,
+      "constellation_id": 21000165,
+      "security": -0.99,
+      "position": [
+        7.762019634339e+18,
+        -2.592453915663216e+16,
+        -9.758321132559833e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    }
+  },
+  "jumps": []
+}

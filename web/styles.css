@@ -1,0 +1,953 @@
+:root {
+  color-scheme:dark;
+  --bg:#090c0f;
+  --panel:#0e1317;
+  --panel2:#12191e;
+  --line:#26323b;
+  --text:#e8edf0;
+  --muted:#7f8e98;
+  --gold:#d9b95b;
+  --cyan:#6fe0d2;
+  --red:#db6a6a;
+  --green:#5ed69b;
+  --orange:#e5a45f;
+  --blue:#6aaee8;
+  font-family:Inter,"Segoe UI",system-ui,sans-serif;
+  font-size:16px
+}
+* {
+  box-sizing:border-box
+}
+html,body {
+  height:100%
+}
+body {
+  margin:0;
+  overflow:hidden;
+  background:var(--bg);
+  color:var(--text)
+}
+button,input {
+  font:inherit
+}
+button {
+  color:inherit
+}
+.topbar {
+  height:68px;
+  display:grid;
+  /* The same variable the shell below uses. Two rules name the rail's width and
+     they must agree: when only one of them moved, the header's columns slid out
+     of line with the panel underneath them. */
+  grid-template-columns:var(--rail-width, 280px) 1fr auto;
+  align-items:center;
+  border-bottom:1px solid var(--line);
+  background:#0b0f12;
+  padding:0 18px
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border:0;
+  background:none;
+  padding:0;
+  cursor:pointer;
+  text-align:left
+}
+.brand-mark {
+  position:relative;
+  width:31px;
+  height:38px;
+  border:2px solid var(--gold);
+  clip-path:polygon(50% 0,100% 73%,50% 100%,0 73%)
+}
+.brand-mark:before,.brand-mark:after {
+  content:"";
+  position:absolute;
+  background:var(--gold);
+  opacity:.6
+}
+.brand-mark:before {
+  width:1px;
+  inset:5px auto 7px 14px
+}
+.brand-mark:after {
+  height:1px;
+  inset:21px 5px auto
+}
+.brand-mark i {
+  position:absolute;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--cyan);
+  left:11px;
+  top:18px;
+  box-shadow:0 0 9px var(--cyan)
+}
+.brand strong {
+  display:block;
+  font-size:.9rem;
+  letter-spacing:.13em
+}
+.brand small {
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-size:.64rem;
+  letter-spacing:.1em
+}
+.view-switch {
+  justify-self:center;
+  display:flex;
+  border:1px solid var(--line);
+  padding:3px
+}
+.view-switch button {
+  min-width:100px;
+  border:0;
+  background:none;
+  padding:7px 14px;
+  color:var(--muted);
+  cursor:pointer;
+  font-size:.82rem
+}
+.view-switch button.active {
+  background:var(--panel2);
+  color:var(--text);
+  box-shadow:inset 0 -2px var(--gold)
+}
+.view-switch button:disabled {
+  opacity:.35
+}
+.archive-status {
+  color:#79bd9b;
+  font-size:.68rem;
+  letter-spacing:.1em
+}
+.archive-status i {
+  display:inline-block;
+  width:6px;
+  height:6px;
+  margin-right:6px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 8px var(--green)
+}
+.shell {
+  height:calc(100vh - 68px);
+  display:grid;
+  /* The rail's resize handle is positioned against this rather than against the
+     rail, so it must be a containing block. */
+  position:relative;
+  /* minmax(420px, 1fr) on the map is a floor rather than a request: once the
+     fixed columns leave it less than that, the grid overflows and the map goes
+     under the inspector. web/panel-size.js clamps the rail against it. */
+  grid-template-columns:var(--rail-width, 280px) minmax(420px,1fr) 300px;
+  /* One row, exactly this container's height, allowed to be shorter than its
+     content.
+     Without it the implicit row is `auto`, which sizes to the tallest item's
+     max-content - the rail, with every section expanded. The rail was then
+     stretched to a row exactly as tall as its own content, so it could never
+     overflow, so it never had anything to scroll: the scrollbar appeared, its
+     thumb filled the whole track, and resizing the window changed nothing
+     because the row was tracking content rather than the viewport.
+     `min-height:0` on the item is necessary and not sufficient - it permits an
+     item to be shorter than its content, and an `auto` row still asks for
+     max-content anyway. The row has to be told. */
+  grid-template-rows:minmax(0, 1fr)
+}
+.rail,.inspector {
+  min-height:0;
+  background:var(--panel)
+}
+.rail {
+  position:relative;
+  /* Moved here from responsive.css, which carried an unconditional `.rail` rule
+     in a file whose name says otherwise. The rail's layout was assembled from
+     two files that disagreed about its overflow, and which one won was decided
+     by the order of the link tags. That overflow is the reason the resize
+     handle above could not be hit. */
+  display:flex;
+  flex-direction:column;
+  overflow-y:auto;
+  scrollbar-width:thin;
+  scrollbar-color:#33424c transparent;
+  border-right:1px solid var(--line);
+  padding:14px 12px 50px;
+  /* Narrowing clips rather than reflows. Deliberately the cheap answer: the
+     rail's contents have a dozen layouts between them and teaching each one to
+     be narrow is a much larger job than this feature is worth. A pilot who
+     wants the space takes it and accepts that the labels are cut.
+
+     ONE AXIS, NOT THE SHORTHAND. This was `overflow:hidden`, added for the
+     clipping above and written before `overflow-y:auto` moved into this rule
+     from responsive.css - where it landed *earlier* in the same block. The
+     shorthand resets both axes, so it silently turned the rail's scrolling off
+     and the region list could not be scrolled at all. Horizontal clipping is
+     what the paragraph above asks for; vertical scrolling is what the rail has
+     always needed. */
+  overflow-x:hidden
+}
+
+/* The grab strip, straddling the rail's border from outside the rail.
+   Not the rail's own child, which is the whole of the bug below: it resizes the
+   rail, it is not part of it.
+   Wider than it looks: 6px of target over a 1px line, because a 1px hit area is
+   a feature people fail to use and conclude is broken. 8px was tried first and
+   read as wide - the cursor changes across the whole band, so the band is the
+   thing a pilot feels, and 6px is what a window edge feels like elsewhere. */
+.rail-resize {
+  position:absolute;
+  top:0;
+  /* Straddling the border, from outside the rail.
+     Two wrong answers preceded this one. `right:-4px` inside the rail gave a
+     4px target and the outer half went to the map. `right:0` inside the rail
+     gave *no* target at all - and the reason is the thing neither measurement
+     could see.
+     `.rail` is a scroll container - responsive.css set `overflow-y:auto` on it
+     unconditionally - and it overflows, so WebKit paints an *overlay*
+     scrollbar there. An overlay scrollbar takes no layout space
+     (offsetWidth - clientWidth is 1px, the border) and is not a DOM element, so
+     it is outside the stacking order entirely and `z-index:6` cannot reach over
+     it. Every pixel of the strip hit-tested as `rail`. The 4px that used to
+     work was only the part poking out past the scrollbar and stopping short of
+     the map.
+     So the handle leaves the scroll container. Positioned against `.shell`,
+     measured in the real page on WebKitGTK: 276-283 all handle, the map from
+     284 - `z-index:6` beats the map even though the map is a later sibling.
+
+     AND IT STARTS AT THE BORDER, NOT BEFORE IT.
+     Straddling looked right and put the strip back over the rail's scrollbar -
+     a different thing to be on top of, with the same result: hovering the strip
+     to scroll the region list did nothing. The two controls were stacked.
+     Where a scrollbar sits inside the rail is not something this file can
+     predict: WebKit gives an overlay one taking 1px of layout, Chromium with
+     `scrollbar-width: thin` gives a classic one taking about eleven, and each
+     puts it at a different offset. Starting at the rail's outer edge overlaps
+     none of them by construction rather than by arithmetic, and the 8px lands
+     in the map's column where `z-index` already wins.
+     The map loses 8px at one edge. The scrollbar loses nothing, which is the
+     trade worth making: one is a control, the other is the thing it was
+     covering. */
+  /* Two pixels clear of the rail's border, so it is the outside edge being
+     grabbed rather than the panel's own.
+     It was already wholly past the border - the border is the rail's last
+     pixel and this began on the next one - but starting *exactly* at an edge
+     and sitting just outside it feel different when nothing is painted to say
+     which. The gap also guarantees clear air between this and any scrollbar,
+     on any engine, without needing to know how wide that scrollbar is.
+     The cost is a 2px dead band where the cursor does not change. That is the
+     trade: a predictable small offset, instead of a target that shares a
+     boundary with another control. */
+  left:calc(var(--rail-width, 280px) + 2px);
+  width:6px;
+  height:100%;
+  cursor:col-resize;
+  z-index:6;
+  background:transparent;
+  border:0;
+  padding:0;
+  touch-action:none
+}
+/* Nothing is painted, and that is the decision rather than an omission.
+   The cursor is the affordance. `col-resize` is what every window edge and pane
+   splitter in every desktop environment uses, a pilot already knows it, and it
+   appears exactly where the target is without occupying a pixel.
+   The alternatives were both tried and both wrong. A 33% tint over a near-black
+   panel could not be seen at all. Making it opaque put a bright full-height
+   line down the rail's edge, against a panel whose whole job is to be quiet
+   behind the map - and a permanent decoration is a poor price for telling
+   someone where to aim once.
+   The target stays at 6px. A hit area wants to be generous whether or not
+   anything marks it, and generous is not the same as wide. */
+/* Keyboard focus, and only keyboard focus.
+   A focus ring is the one indicator that cannot be dropped - it is the only way
+   to see where focus is, and arrow keys resize from here. But an outline around
+   a 6px column that is the height of the window is a tall thin box down the
+   edge of the map, which is the same full-height line that was removed twice.
+   So it is a short grip instead: 2px wide, 28px tall, centred. Thin, brief, and
+   it says "this is grabbable here" without drawing a rule down the page.
+   `:focus-visible` rather than `:focus`, so a mouse drag never leaves it
+   behind. */
+.rail-resize:focus-visible { outline:none }
+.rail-resize:focus-visible::after {
+  content:"";
+  position:absolute;
+  left:2px;
+  top:50%;
+  width:2px;
+  height:28px;
+  margin-top:-14px;
+  background:#3f8fb4
+}
+/* While dragging, the whole window keeps the resize cursor and stops selecting
+   text - without this a drag that leaves the strip highlights the region list. */
+body.rail-resizing { cursor:col-resize; user-select:none }
+.search {
+  height:42px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  border:1px solid var(--line);
+  background:#090d10;
+  padding:0 10px
+}
+.search:focus-within {
+  border-color:#5d7585
+}
+.search svg {
+  width:17px;
+  fill:none;
+  stroke:var(--muted);
+  stroke-width:1.7
+}
+.search input {
+  min-width:0;
+  flex:1;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:var(--text);
+  font-size:.84rem
+}
+.search input::placeholder {
+  color:#62717b
+}
+kbd {
+  border:1px solid var(--line);
+  color:#52616b;
+  padding:1px 5px;
+  font:.7rem/1.4 monospace
+}
+.search-results {
+  position:absolute;
+  z-index:10;
+  top:58px;
+  left:12px;
+  right:12px;
+  max-height:360px;
+  overflow:auto;
+  border:1px solid #3b4b57;
+  background:#0c1115;
+  box-shadow:0 18px 35px #000a
+}
+.search-result {
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:4px 10px;
+  border:0;
+  border-bottom:1px solid #1c272e;
+  background:none;
+  text-align:left;
+  padding:10px 12px;
+  cursor:pointer
+}
+.search-result:hover {
+  background:#152028
+}
+.search-result strong {
+  font-size:.83rem
+}
+.search-result span {
+  color:var(--muted);
+  font-size:.71rem
+}
+.search-result em {
+  grid-row:span 2;
+  align-self:center;
+  color:var(--gold);
+  font-size:.62rem;
+  font-style:normal;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+.rail-title {
+  display:flex;
+  justify-content:space-between;
+  margin:20px 5px 9px;
+  color:var(--muted);
+  font-size:.67rem;
+  text-transform:uppercase;
+  letter-spacing:.13em
+}
+/* The index is the scroll container, and always was.
+   It flexes to whatever height the sections above leave and scrolls its entries
+   inside that - a stable arrangement that worked until this was removed in the
+   name of "one scroll container". The rail declaring `overflow-y:auto` as well
+   is what made two of them look like a conflict; the conflict was never here.
+   Restored after checking the last commit where scrolling worked. */
+.region-list {
+  height:calc(100% - 85px);
+  overflow-y:auto;
+  padding-right:4px;
+  scrollbar-width:thin;
+  scrollbar-color:#33424c transparent
+}
+.region-item {
+  width:100%;
+  height:39px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:center;
+  border:0;
+  border-left:2px solid transparent;
+  background:transparent;
+  padding:0 9px;
+  color:#b9c3c9;
+  text-align:left;
+  cursor:pointer;
+  font-size:.81rem
+}
+.region-item small {
+  color:#52616b;
+  font-size:.68rem
+}
+.region-item:hover {
+  background:#141c21;
+  color:white
+}
+.region-item.active {
+  border-left-color:var(--gold);
+  background:#171e22;
+  color:white
+}
+.rail footer {
+  position:absolute;
+  left:17px;
+  bottom:13px;
+  color:#5d6d77;
+  font:.61rem/1.4 monospace;
+  letter-spacing:.08em
+}
+.rail footer span {
+  color:#3f4d56
+}
+/* The trademark notice. Dimmer than the label above it and wrapped to the rail's
+   width: it has to be legible and it is not what anybody opened the map to read.
+   `right` rather than a width, so it follows the rail when the rail is dragged. */
+.rail footer .notice {
+  margin:7px 0 0;
+  padding-right:17px;
+  color:#39454d;
+  font:.58rem/1.5 monospace;
+  letter-spacing:.04em;
+  text-transform:none
+}
+.workspace {
+  min-width:0;
+  min-height:0;
+  display:grid;
+  grid-template-rows:75px 1fr auto;
+  background:#080b0e
+}
+.map-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  border-bottom:1px solid var(--line);
+  padding:0 22px;
+  background:linear-gradient(90deg,#10171b,#0b1013)
+}
+.eyebrow {
+  color:var(--gold);
+  font-size:.64rem;
+  letter-spacing:.15em
+}
+.map-header h1 {
+  margin:5px 0 0;
+  font-size:1.35rem;
+  font-weight:500
+}
+.metrics {
+  display:flex;
+  gap:20px
+}
+.metric {
+  min-width:72px;
+  border-left:1px solid var(--line);
+  padding-left:10px
+}
+.metric strong {
+  display:block;
+  font:500 1rem/1.2 monospace
+}
+.metric span {
+  color:var(--muted);
+  font-size:.63rem;
+  text-transform:uppercase;
+  letter-spacing:.09em
+}
+.map-stage {
+  position:relative;
+  min-height:0;
+  overflow:hidden;
+  background:radial-gradient(circle at 50% 45%,#121a1f 0,#090d10 66%)
+}
+#map {
+  width:100%;
+  height:100%;
+  display:block;
+  cursor:grab;
+  user-select:none
+}
+#map.dragging {
+  cursor:grabbing
+}
+.edge {
+  fill:none;
+  stroke:#667884;
+  stroke-width:1.15;
+  vector-effect:non-scaling-stroke;
+  opacity:.62
+}
+.edge.boundary {
+  stroke:var(--gold);
+  stroke-width:1.7;
+  stroke-dasharray:5 4
+}
+.constellation-ring {
+  fill:#142027;
+  fill-opacity:.28;
+  stroke:#40515c;
+  stroke-width:1;
+  stroke-dasharray:5 6;
+  vector-effect:non-scaling-stroke
+}
+.constellation-label {
+  fill:#6d7c85;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.1em;
+  text-anchor:middle;
+  pointer-events:none
+}
+.system-node {
+  cursor:pointer
+}
+.system-node rect {
+  stroke-width:1.5;
+  vector-effect:non-scaling-stroke
+}
+.system-node .system-name {
+  fill:#f0f3f5;
+  font-size:12px;
+  font-weight:600;
+  text-anchor:middle;
+  pointer-events:none
+}
+.system-node .system-info {
+  fill:#aab6bd;
+  font-size:8.5px;
+  text-anchor:middle;
+  pointer-events:none
+}
+.system-node:hover rect,.system-node.selected rect {
+  stroke:#fff;
+  filter:url(#glow)
+}
+.region-node {
+  cursor:pointer
+}
+.region-node circle {
+  fill:#263640;
+  stroke:#607380;
+  stroke-width:1.5;
+  vector-effect:non-scaling-stroke
+}
+.region-node.empire circle {
+  fill:#314d4a;
+  stroke:var(--cyan)
+}
+.region-node.wormhole circle {
+  fill:#3d334d;
+  stroke:#a98bd1
+}
+.region-node.special circle {
+  fill:#4c3f27;
+  stroke:var(--gold)
+}
+.region-node text {
+  fill:#d8dee2;
+  font-size:11.5px;
+  font-weight:600;
+  paint-order:stroke;
+  stroke:#090d10;
+  stroke-width:3px;
+  pointer-events:none
+}
+.region-node:hover circle,.region-node.selected circle {
+  stroke:white;
+  filter:url(#glow)
+}
+.dimmed {
+  opacity:.08!important
+}
+.loading {
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  color:var(--muted);
+  font-size:.76rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  background:#090d10dd;
+  z-index:5
+}
+.loading span {
+  width:16px;
+  height:16px;
+  border:2px solid var(--line);
+  border-top-color:var(--gold);
+  border-radius:50%;
+  animation:spin .8s linear infinite
+}
+@keyframes spin {
+  to {
+    transform:rotate(360deg)
+  }
+}
+.map-tools {
+  position:absolute;
+  top:14px;
+  right:14px;
+  display:grid;
+  border:1px solid var(--line);
+  background:#0b1014e8
+}
+.map-tools button {
+  width:34px;
+  height:34px;
+  border:0;
+  border-bottom:1px solid var(--line);
+  background:transparent;
+  color:#9eabb3;
+  cursor:pointer;
+  font:1.1rem/1 monospace
+}
+.map-tools button:last-child {
+  border-bottom:0
+}
+.map-tools button:hover {
+  color:white;
+  background:#182229
+}
+.legend {
+  position:absolute;
+  left:16px;
+  bottom:14px;
+  display:flex;
+  gap:13px;
+  padding:8px 10px;
+  background:#0a0f12e8;
+  border:1px solid #202b32;
+  color:var(--muted);
+  font-size:.66rem
+}
+.legend span {
+  display:flex;
+  align-items:center;
+  gap:5px
+}
+.legend i {
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  display:inline-block
+}
+.coordinates {
+  position:absolute;
+  right:15px;
+  bottom:14px;
+  color:#46545d;
+  font:.63rem monospace
+}
+.constellations {
+  display:flex;
+  gap:4px;
+  overflow-x:auto;
+  border-top:1px solid var(--line);
+  padding:8px 12px;
+  background:#0d1216;
+  scrollbar-width:thin
+}
+.constellations button {
+  flex:0 0 auto;
+  border:1px solid #26323b;
+  background:transparent;
+  color:var(--muted);
+  padding:6px 10px;
+  cursor:pointer;
+  font-size:.71rem
+}
+.constellations button:hover,.constellations button.active {
+  border-color:#6a7c87;
+  color:white;
+  background:#172127
+}
+.inspector {
+  border-left:1px solid var(--line);
+  overflow-y:auto
+}
+.inspector-empty {
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  text-align:center;
+  color:var(--muted)
+}
+.reticle {
+  position:relative;
+  width:48px;
+  height:48px;
+  border:1px solid #35434d;
+  border-radius:50%;
+  margin-bottom:15px
+}
+.reticle:before,.reticle:after {
+  content:"";
+  position:absolute;
+  background:#35434d
+}
+.reticle:before {
+  width:64px;
+  height:1px;
+  left:-9px;
+  top:23px
+}
+.reticle:after {
+  width:1px;
+  height:64px;
+  left:23px;
+  top:-9px
+}
+.inspector-empty h2 {
+  color:#b2bdc3;
+  font-size:.9rem;
+  font-weight:500;
+  margin:0 0 6px
+}
+.inspector-empty p {
+  margin:0;
+  font-size:.75rem
+}
+.inspector-header {
+  padding:21px 19px 18px;
+  border-bottom:1px solid var(--line);
+  background:#10171b
+}
+.inspector-tag {
+  color:var(--gold);
+  font-size:.61rem;
+  letter-spacing:.13em;
+  text-transform:uppercase
+}
+.inspector-header h2 {
+  margin:7px 0 5px;
+  font-size:1.45rem;
+  font-weight:500
+}
+.inspector-header p {
+  margin:0;
+  color:var(--muted);
+  font-size:.75rem
+}
+.intel-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-bottom:1px solid var(--line)
+}
+.intel-cell {
+  padding:14px 17px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line)
+}
+.intel-cell:nth-child(even) {
+  border-right:0
+}
+.intel-cell strong {
+  display:block;
+  font:500 .94rem monospace
+}
+.intel-cell span {
+  color:var(--muted);
+  font-size:.62rem;
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+.inspector-section {
+  padding:17px;
+  border-bottom:1px solid var(--line)
+}
+.inspector-section h3 {
+  margin:0 0 11px;
+  color:#8d9ca5;
+  font-size:.64rem;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+.neighbor {
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  /* space-between puts the two spans at opposite ends, which is no gap at all
+     once the row is narrow enough for them to meet. At 390px the activity
+     row's label ran straight into its value and read as one collided string. */
+  gap:10px;
+  border:0;
+  border-bottom:1px solid #1b252b;
+  background:transparent;
+  padding:9px 2px;
+  color:#c7d0d5;
+  cursor:pointer;
+  text-align:left;
+  font-size:.79rem
+}
+.neighbor:hover {
+  color:white
+}
+.neighbor span:first-child {
+  flex:0 1 auto;
+  min-width:0
+}
+.neighbor span:last-child {
+  color:var(--muted);
+  font:.67rem monospace;
+  /* The value is the part that grows, so it wraps under itself rather than
+     pushing the label off the row. */
+  flex:1 1 auto;
+  min-width:0;
+  text-align:right
+}
+.sec-line {
+  display:flex!important;
+  align-items:center;
+  gap:8px
+}
+.sec-dot {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  box-shadow:0 0 7px currentColor
+}
+.open-region {
+  width:100%;
+  margin-top:13px;
+  border:1px solid #526572;
+  background:#172229;
+  color:#dce3e7;
+  padding:10px;
+  cursor:pointer;
+  font-size:.77rem
+}
+.open-region:hover {
+  border-color:var(--gold)
+}
+.tooltip {
+  position:fixed;
+  z-index:30;
+  pointer-events:none;
+  background:#070a0cf2;
+  border:1px solid #475862;
+  color:white;
+  padding:7px 9px;
+  box-shadow:0 6px 18px #000a;
+  font-size:.71rem
+}
+.tooltip small {
+  display:block;
+  margin-top:2px;
+  color:var(--muted)
+}
+.muted {
+  color:var(--muted);
+  font-size:.75rem
+}
+@media(max-width:1050px) {
+  .shell {
+    grid-template-columns:230px minmax(420px,1fr)
+  }
+  .inspector {
+    position:absolute;
+    right:0;
+    top:68px;
+    bottom:0;
+    width:285px;
+    z-index:8;
+    box-shadow:-12px 0 30px #0008;
+    transform:translateX(100%);
+    transition:transform .2s
+  }
+  .inspector.open {
+    transform:translateX(0)
+  }
+  .topbar {
+    grid-template-columns:230px 1fr auto
+  }
+}
+@media(max-width:760px) {
+  .topbar {
+    height:58px;
+    grid-template-columns:1fr auto;
+    padding:0 12px
+  }
+  .brand small,.archive-status {
+    display:none
+  }
+  .view-switch {
+    justify-self:end
+  }
+  .view-switch button {
+    min-width:76px;
+    padding-inline:9px
+  }
+  .shell {
+    height:calc(100vh - 58px);
+    grid-template-columns:1fr
+  }
+  .rail {
+    position:absolute;
+    z-index:12;
+    left:0;
+    top:58px;
+    bottom:0;
+    width:255px;
+    transform:translateX(calc(-100% + 7px));
+    transition:transform .2s;
+    box-shadow:10px 0 30px #0009
+  }
+  .rail:focus-within,.rail:hover {
+    transform:translateX(0)
+  }
+  .map-header {
+    padding-left:17px
+  }
+  .metrics {
+    display:none
+  }
+  .map-header h1 {
+    font-size:1.1rem
+  }
+  .legend {
+    max-width:calc(100% - 80px);
+    flex-wrap:wrap
+  }
+}
+.label-leader {
+  stroke:#4a5b66;
+  stroke-width:.8;
+  vector-effect:non-scaling-stroke;
+  opacity:.75;
+  pointer-events:none
+}

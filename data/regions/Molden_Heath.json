@@ -1,0 +1,1689 @@
+{
+  "region": {
+    "region_id": 10000028,
+    "name": "Molden Heath",
+    "constellation_ids": [
+      20000350,
+      20000351,
+      20000352,
+      20000353,
+      20000354,
+      20000355
+    ],
+    "position": [
+      -3.572211362228821e+16,
+      4350325397619760.0,
+      -5376103573250504.0
+    ],
+    "systems": [
+      30002393,
+      30002383,
+      30002419,
+      30002407,
+      30002389,
+      30002395,
+      30002387,
+      30002420,
+      30002398,
+      30002412,
+      30002408,
+      30002386,
+      30002403,
+      30002384,
+      30002404,
+      30002406,
+      30002418,
+      30002390,
+      30002397,
+      30002392,
+      30002391,
+      30002396,
+      30002402,
+      30002417,
+      30002416,
+      30002414,
+      30002401,
+      30002410,
+      30002394,
+      30002388,
+      30002399,
+      30002409,
+      30002405,
+      30002385,
+      30002413,
+      30002400,
+      30002415
+    ],
+    "constellations": [
+      20000353,
+      20000352,
+      20000355,
+      20000354,
+      20000350,
+      20000351
+    ],
+    "system_count": 37,
+    "position_2d": [
+      1.7052062309294624e+17,
+      -2.773528206933463e+16
+    ],
+    "bounds_2d": [
+      1.4586703903131546e+17,
+      -4.930716812326157e+16,
+      1.9517420715457702e+17,
+      -6163396015407696.0
+    ]
+  },
+  "constellations": {
+    "20000353": {
+      "constellation_id": 20000353,
+      "region_id": 10000028,
+      "name": "Almur",
+      "solar_system_ids": [
+        30002402,
+        30002403,
+        30002404,
+        30002405,
+        30002406,
+        30002407
+      ],
+      "position": [
+        -4.830405957648888e+16,
+        4913819382980702.0,
+        -183156755441142.0
+      ],
+      "position_2d": [
+        1.674389250852424e+17,
+        -3.081698007703848e+16
+      ],
+      "bounds_2d": [
+        1.623027617390693e+17,
+        -3.698037609244618e+16,
+        1.725750884314155e+17,
+        -2.4653584061630784e+16
+      ]
+    },
+    "20000352": {
+      "constellation_id": 20000352,
+      "region_id": 10000028,
+      "name": "Besateoden",
+      "solar_system_ids": [
+        30002396,
+        30002397,
+        30002398,
+        30002399,
+        30002400,
+        30002401
+      ],
+      "position": [
+        -3.867440125551725e+16,
+        1165418882720678.0,
+        7297437656327948.0
+      ],
+      "position_2d": [
+        1.7873848444682317e+17,
+        -1.2326792030815392e+16
+      ],
+      "bounds_2d": [
+        1.725750884314155e+17,
+        -1.849018804622309e+16,
+        1.8490188046223088e+17,
+        -6163396015407696.0
+      ]
+    },
+    "20000355": {
+      "constellation_id": 20000355,
+      "region_id": 10000028,
+      "name": "Elfrard",
+      "solar_system_ids": [
+        30002414,
+        30002415,
+        30002416,
+        30002417,
+        30002418,
+        30002419,
+        30002420
+      ],
+      "position": [
+        -1.7870341416294692e+16,
+        -1.1025569331781392e+16,
+        -1.8049644802828956e+16
+      ],
+      "position_2d": [
+        1.8592911313146547e+17,
+        -4.2116539438619256e+16
+      ],
+      "bounds_2d": [
+        1.7668401910835395e+17,
+        -4.930716812326157e+16,
+        1.9517420715457702e+17,
+        -3.4925910753976944e+16
+      ]
+    },
+    "20000354": {
+      "constellation_id": 20000354,
+      "region_id": 10000028,
+      "name": "Eoldulf",
+      "solar_system_ids": [
+        30002408,
+        30002409,
+        30002410,
+        30002412,
+        30002413
+      ],
+      "position": [
+        -1.4319594969553332e+16,
+        -3718163041907468.0,
+        4605796254604628.0
+      ],
+      "position_2d": [
+        1.9106527647763856e+17,
+        -1.7462955376988472e+16
+      ],
+      "bounds_2d": [
+        1.869563458007001e+17,
+        -2.876251473856925e+16,
+        1.9517420715457702e+17,
+        -6163396015407696.0
+      ]
+    },
+    "20000350": {
+      "constellation_id": 20000350,
+      "region_id": 10000028,
+      "name": "Fittakan",
+      "solar_system_ids": [
+        30002383,
+        30002384,
+        30002385,
+        30002386,
+        30002387,
+        30002388,
+        30002389
+      ],
+      "position": [
+        -5.712463227502308e+16,
+        1.972622012702091e+16,
+        6614261455013100.0
+      ],
+      "position_2d": [
+        1.5819383106213088e+17,
+        -1.4381257369284624e+16
+      ],
+      "bounds_2d": [
+        1.4997596970825395e+17,
+        -1.849018804622309e+16,
+        1.664116924160078e+17,
+        -1.027232669234616e+16
+      ]
+    },
+    "20000351": {
+      "constellation_id": 20000351,
+      "region_id": 10000028,
+      "name": "Tartatven",
+      "solar_system_ids": [
+        30002390,
+        30002391,
+        30002392,
+        30002393,
+        30002394,
+        30002395
+      ],
+      "position": [
+        -4.836875184916215e+16,
+        1.7990371492580682e+16,
+        -6743453975666091.0
+      ],
+      "position_2d": [
+        1.55112133054427e+17,
+        -4.108930676938464e+16
+      ],
+      "bounds_2d": [
+        1.4586703903131546e+17,
+        -4.51982374463231e+16,
+        1.6435722707753856e+17,
+        -3.698037609244618e+16
+      ]
+    }
+  },
+  "systems": {
+    "30002393": {
+      "system_id": 30002393,
+      "name": "Aedald",
+      "region_id": 10000028,
+      "constellation_id": 20000351,
+      "security": 0.250458,
+      "position": [
+        -5.002515837139266e+16,
+        1.1692199758368196e+16,
+        -9085651189550620.0
+      ],
+      "position_2d": [
+        1.5819383106213088e+17,
+        -4.108930676938464e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30002395,
+        30002390,
+        30002394
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 62854.654,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002383": {
+      "system_id": 30002383,
+      "name": "Aeddin",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.569668,
+      "position": [
+        -6.510283521948083e+16,
+        1.6301572439215702e+16,
+        8174973281387354.0
+      ],
+      "position_2d": [
+        1.4997596970825395e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002523,
+        30002384,
+        30002385
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 29552.097,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002419": {
+      "system_id": 30002419,
+      "name": "Aeditide",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.214491,
+      "position": [
+        -1.3255193597933816e+16,
+        -1.1255489610724268e+16,
+        -2.2835851761630948e+16
+      ],
+      "position_2d": [
+        1.8284741512376166e+17,
+        -4.108930676938464e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30002420,
+        30002418,
+        30002417,
+        30002415
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 26040.938,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002407": {
+      "system_id": 30002407,
+      "name": "Altbrard",
+      "region_id": 10000028,
+      "constellation_id": 20000353,
+      "security": 0.349869,
+      "position": [
+        -4.377216301043815e+16,
+        6356299443752467.0,
+        3805254324385223.0
+      ],
+      "position_2d": [
+        1.725750884314155e+17,
+        -2.4653584061630784e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002402
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002389": {
+      "system_id": 30002389,
+      "name": "Atlar",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.373367,
+      "position": [
+        -4.914642933056533e+16,
+        1.6864247523214488e+16,
+        1.1403760307247346e+16
+      ],
+      "position_2d": [
+        1.664116924160078e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30002386,
+        30002396,
+        30002388
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 37498.226,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002395": {
+      "system_id": 30002395,
+      "name": "Audesder",
+      "region_id": 10000028,
+      "constellation_id": 20000351,
+      "security": 0.264712,
+      "position": [
+        -5.265052727644508e+16,
+        1.1963942616429582e+16,
+        -1.141354856777415e+16
+      ],
+      "position_2d": [
+        1.540849003851924e+17,
+        -4.51982374463231e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002393,
+        30000116
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 33520.174,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002387": {
+      "system_id": 30002387,
+      "name": "Bosena",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.400467,
+      "position": [
+        -5.16177241736948e+16,
+        2.0742630879105864e+16,
+        1824762602778853.0
+      ],
+      "position_2d": [
+        1.5819383106213088e+17,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002390,
+        30002388,
+        30002385
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 84954.163,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002420": {
+      "system_id": 30002420,
+      "name": "Egbinger",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.034555,
+      "position": [
+        -1.2180773835012374e+16,
+        -4371791346757523.0,
+        -2.6475898383177964e+16
+      ],
+      "position_2d": [
+        1.7668401910835395e+17,
+        -4.314377210785387e+16
+      ],
+      "npc_stations": 7,
+      "neighbors": [
+        30002419,
+        30000970,
+        30002394
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 43890.788,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002398": {
+      "system_id": 30002398,
+      "name": "Eldulf",
+      "region_id": 10000028,
+      "constellation_id": 20000352,
+      "security": 0.563633,
+      "position": [
+        -4.122562252415259e+16,
+        -1.2011862185429882e+16,
+        6880525027568988.0
+      ],
+      "position_2d": [
+        1.807929497852924e+17,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30002397,
+        30002400
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002412": {
+      "system_id": 30002412,
+      "name": "Ennur",
+      "region_id": 10000028,
+      "constellation_id": 20000354,
+      "security": 0.058349,
+      "position": [
+        -8968666578881674.0,
+        -1931296768511632.0,
+        1.2455882442149544e+16
+      ],
+      "position_2d": [
+        1.869563458007001e+17,
+        -6163396015407696.0
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30002401,
+        30003465
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 22801.299,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002408": {
+      "system_id": 30002408,
+      "name": "Fegomenko",
+      "region_id": 10000028,
+      "constellation_id": 20000354,
+      "security": 0.504199,
+      "position": [
+        -2.210640748789614e+16,
+        -8136592796488142.0,
+        3609660850135472.0
+      ],
+      "position_2d": [
+        1.8901081113916934e+17,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002410,
+        30002399,
+        30002409
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 16985.993,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002386": {
+      "system_id": 30002386,
+      "name": "Gelfiven",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.559771,
+      "position": [
+        -5.329532755842465e+16,
+        2.507619967387296e+16,
+        1.0740020789760406e+16
+      ],
+      "position_2d": [
+        1.5819383106213088e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 10,
+      "neighbors": [
+        30002389,
+        30002388,
+        30002385
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 54037.959,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002403": {
+      "system_id": 30002403,
+      "name": "Gonheim",
+      "region_id": 10000028,
+      "constellation_id": 20000353,
+      "security": 0.283824,
+      "position": [
+        -4.7621068157925784e+16,
+        1.1111488633599504e+16,
+        415361113846922.0
+      ],
+      "position_2d": [
+        1.623027617390693e+17,
+        -3.081698007703848e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002404,
+        30002406,
+        30002402
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002384": {
+      "system_id": 30002384,
+      "name": "Gulfonodi",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.49786,
+      "position": [
+        -6.321111501564218e+16,
+        1.4376240580168868e+16,
+        5667910457155592.0
+      ],
+      "position_2d": [
+        1.4997596970825395e+17,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 11,
+      "neighbors": [
+        30002383,
+        30002385
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002404": {
+      "system_id": 30002404,
+      "name": "Half",
+      "region_id": 10000028,
+      "constellation_id": 20000353,
+      "security": 0.241078,
+      "position": [
+        -5.283595614253962e+16,
+        -929430969270597.0,
+        -4171567835267506.0
+      ],
+      "position_2d": [
+        1.7052062309294624e+17,
+        -3.081698007703848e+16
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30002403,
+        30002402,
+        30002405
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002406": {
+      "system_id": 30002406,
+      "name": "Hedaleolfarber",
+      "region_id": 10000028,
+      "constellation_id": 20000353,
+      "security": 0.303156,
+      "position": [
+        -4.706715045900654e+16,
+        3503446217356761.0,
+        -3638755038311783.0
+      ],
+      "position_2d": [
+        1.623027617390693e+17,
+        -3.698037609244618e+16
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30002403
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002418": {
+      "system_id": 30002418,
+      "name": "Hegfunden",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.322562,
+      "position": [
+        -1.4885288422399478e+16,
+        -1.908540279938508e+16,
+        -2.460794073575239e+16
+      ],
+      "position_2d": [
+        1.8490188046223088e+17,
+        -4.930716812326157e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30002419,
+        30002417,
+        30002416
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 1429.374,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002390": {
+      "system_id": 30002390,
+      "name": "Heild",
+      "region_id": 10000028,
+      "constellation_id": 20000351,
+      "security": 0.330762,
+      "position": [
+        -5.18806314804773e+16,
+        1.8293522448492276e+16,
+        -7083059899546652.0
+      ],
+      "position_2d": [
+        1.540849003851924e+17,
+        -3.698037609244618e+16
+      ],
+      "npc_stations": 7,
+      "neighbors": [
+        30002393,
+        30002387,
+        30002391
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 67371.812,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002397": {
+      "system_id": 30002397,
+      "name": "Horaka",
+      "region_id": 10000028,
+      "constellation_id": 20000352,
+      "security": 0.619042,
+      "position": [
+        -3.995154119075503e+16,
+        -4842967407259515.0,
+        8002043667255301.0
+      ],
+      "position_2d": [
+        1.7873848444682317e+17,
+        -1.2326792030815392e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30002398,
+        30002396,
+        30002399,
+        30002400
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 17775.115,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002392": {
+      "system_id": 30002392,
+      "name": "Hrober",
+      "region_id": 10000028,
+      "constellation_id": 20000351,
+      "security": 0.307823,
+      "position": [
+        -4.4086976421879224e+16,
+        2.7376114231889964e+16,
+        -1937807056973842.0
+      ],
+      "position_2d": [
+        1.4586703903131546e+17,
+        -4.51982374463231e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30002391
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002391": {
+      "system_id": 30002391,
+      "name": "Hrokkur",
+      "region_id": 10000028,
+      "constellation_id": 20000351,
+      "security": 0.298883,
+      "position": [
+        -4.814083178027989e+16,
+        2.1207557417259092e+16,
+        -7765044352096948.0
+      ],
+      "position_2d": [
+        1.4997596970825395e+17,
+        -4.108930676938464e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30002390,
+        30002392
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002396": {
+      "system_id": 30002396,
+      "name": "Illamur",
+      "region_id": 10000028,
+      "constellation_id": 20000352,
+      "security": 0.28234,
+      "position": [
+        -4.415922047895688e+16,
+        9084789520998044.0,
+        1.3602955485974566e+16
+      ],
+      "position_2d": [
+        1.725750884314155e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002389,
+        30002397,
+        30002401
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 36662.489,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002402": {
+      "system_id": 30002402,
+      "name": "Istodard",
+      "region_id": 10000028,
+      "constellation_id": 20000353,
+      "security": 0.29488,
+      "position": [
+        -4.9600489116296056e+16,
+        6560905867045209.0,
+        2122160216663188.0
+      ],
+      "position_2d": [
+        1.664116924160078e+17,
+        -2.4653584061630784e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30002407,
+        30002403,
+        30002404,
+        30002388
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 26114.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002417": {
+      "system_id": 30002417,
+      "name": "Kadlina",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.419907,
+      "position": [
+        -1.9758414932225092e+16,
+        -1.2848905126769192e+16,
+        -2.3689126175092708e+16
+      ],
+      "position_2d": [
+        1.8901081113916934e+17,
+        -4.51982374463231e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002419,
+        30002418,
+        30002416
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 1429.374,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002416": {
+      "system_id": 30002416,
+      "name": "Kattegaud",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.715863,
+      "position": [
+        -2.0418237858094908e+16,
+        -1.7522722274182812e+16,
+        -1.8599532339252876e+16
+      ],
+      "position_2d": [
+        1.9517420715457702e+17,
+        -4.51982374463231e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002418,
+        30002417,
+        30002415
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 468.966,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002414": {
+      "system_id": 30002414,
+      "name": "Klingt",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.302147,
+      "position": [
+        -2.3559908997577012e+16,
+        -2965735864177703.0,
+        -9623391222479946.0
+      ],
+      "position_2d": [
+        1.931197418161078e+17,
+        -3.4925910753976944e+16
+      ],
+      "npc_stations": 11,
+      "neighbors": [
+        30002413,
+        30002415
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 6757.031,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002401": {
+      "system_id": 30002401,
+      "name": "Meildolf",
+      "region_id": 10000028,
+      "constellation_id": 20000352,
+      "security": 0.284598,
+      "position": [
+        -4.27728150859951e+16,
+        1.4649123187676152e+16,
+        1.3765554273442882e+16
+      ],
+      "position_2d": [
+        1.7873848444682317e+17,
+        -6163396015407696.0
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002412,
+        30002396,
+        30002399
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 29724.426,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002410": {
+      "system_id": 30002410,
+      "name": "Mimiror",
+      "region_id": 10000028,
+      "constellation_id": 20000354,
+      "security": 0.204493,
+      "position": [
+        -1.4214486349412106e+16,
+        -5930460272638518.0,
+        2972844796557446.0
+      ],
+      "position_2d": [
+        1.9517420715457702e+17,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002408,
+        30002409
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002394": {
+      "system_id": 30002394,
+      "name": "Muttokon",
+      "region_id": 10000028,
+      "constellation_id": 20000351,
+      "security": 0.20719,
+      "position": [
+        -4.503624273554958e+16,
+        8604628753271402.0,
+        -1.154910089435834e+16
+      ],
+      "position_2d": [
+        1.6435722707753856e+17,
+        -4.314377210785387e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002393,
+        30002420
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 30087.334,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002388": {
+      "system_id": 30002388,
+      "name": "Oddelulf",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.370781,
+      "position": [
+        -4.91839381215455e+16,
+        1.8167872041362892e+16,
+        7909754091125713.0
+      ],
+      "position_2d": [
+        1.623027617390693e+17,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30002389,
+        30002387,
+        30002386,
+        30002402
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 32852.666,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002399": {
+      "system_id": 30002399,
+      "name": "Orien",
+      "region_id": 10000028,
+      "constellation_id": 20000352,
+      "security": 0.804725,
+      "position": [
+        -3.3189582032077624e+16,
+        -7530761275445569.0,
+        3261556639677569.0
+      ],
+      "position_2d": [
+        1.8490188046223088e+17,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30002408,
+        30002397,
+        30002401
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 23879.051,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002409": {
+      "system_id": 30002409,
+      "name": "Osvetur",
+      "region_id": 10000028,
+      "constellation_id": 20000354,
+      "security": 0.24758,
+      "position": [
+        -1.688017711282274e+16,
+        -1276679448038104.0,
+        135946434190950.0
+      ],
+      "position_2d": [
+        1.931197418161078e+17,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002408,
+        30002410,
+        30002413
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 9492.043,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002405": {
+      "system_id": 30002405,
+      "name": "Sakulda",
+      "region_id": 10000028,
+      "constellation_id": 20000353,
+      "security": 0.302073,
+      "position": [
+        -4.961401096739395e+16,
+        -1283849867638102.0,
+        -2555988953305468.0
+      ],
+      "position_2d": [
+        1.7052062309294624e+17,
+        -3.698037609244618e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002404
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002385": {
+      "system_id": 30002385,
+      "name": "Teonusude",
+      "region_id": 10000028,
+      "constellation_id": 20000350,
+      "security": 0.586314,
+      "position": [
+        -5.925918851831e+16,
+        2.240137057975534e+16,
+        6749287480964822.0
+      ],
+      "position_2d": [
+        1.540849003851924e+17,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 6,
+      "neighbors": [
+        30002383,
+        30002387,
+        30002386,
+        30002384,
+        30002570
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 171320.422,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002413": {
+      "system_id": 30002413,
+      "name": "Unertek",
+      "region_id": 10000028,
+      "constellation_id": 20000354,
+      "security": 0.304135,
+      "position": [
+        -2.0813198399889664e+16,
+        700266712673207.0,
+        -3244289932940288.0
+      ],
+      "position_2d": [
+        1.931197418161078e+17,
+        -2.876251473856925e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30002414,
+        30002409
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 6612.892,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002400": {
+      "system_id": 30002400,
+      "name": "Varigne",
+      "region_id": 10000028,
+      "constellation_id": 20000352,
+      "security": 0.640147,
+      "position": [
+        -3.895550383887495e+16,
+        -1.2318285422234794e+16,
+        829321039213015.0
+      ],
+      "position_2d": [
+        1.7462955376988474e+17,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002398,
+        30002397
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30002415": {
+      "system_id": 30002415,
+      "name": "Weld",
+      "region_id": 10000028,
+      "constellation_id": 20000355,
+      "security": 0.302036,
+      "position": [
+        -2.0358813074711292e+16,
+        -7819022990612048.0,
+        -1.3369571132481848e+16
+      ],
+      "position_2d": [
+        1.8901081113916934e+17,
+        -3.903484143091541e+16
+      ],
+      "npc_stations": 7,
+      "neighbors": [
+        30002419,
+        30002416,
+        30002414
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 11186.535,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    }
+  },
+  "jumps": [
+    {
+      "from_system_id": 30002383,
+      "to_system_id": 30002384,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.389,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002383,
+      "to_system_id": 30002385,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.906,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002384,
+      "to_system_id": 30002385,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.952,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002385,
+      "to_system_id": 30002386,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.809,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002385,
+      "to_system_id": 30002387,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.977,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002386,
+      "to_system_id": 30002388,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.901,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002386,
+      "to_system_id": 30002389,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.975,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002387,
+      "to_system_id": 30002388,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.744,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002387,
+      "to_system_id": 30002390,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.977,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002388,
+      "to_system_id": 30002389,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.394,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002388,
+      "to_system_id": 30002402,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.372,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30002389,
+      "to_system_id": 30002396,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.004,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002390,
+      "to_system_id": 30002391,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.506,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30002390,
+      "to_system_id": 30002393,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.755,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002396,
+      "to_system_id": 30002397,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.648,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002396,
+      "to_system_id": 30002401,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.606,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002402,
+      "to_system_id": 30002403,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.555,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002402,
+      "to_system_id": 30002404,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.089,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002402,
+      "to_system_id": 30002407,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.642,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30002397,
+      "to_system_id": 30002398,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.779,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002397,
+      "to_system_id": 30002399,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.918,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002397,
+      "to_system_id": 30002400,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.1,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002403,
+      "to_system_id": 30002404,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.469,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002403,
+      "to_system_id": 30002406,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.913,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30002404,
+      "to_system_id": 30002405,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.383,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30002398,
+      "to_system_id": 30002400,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.684,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002391,
+      "to_system_id": 30002392,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.994,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30002399,
+      "to_system_id": 30002401,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 2.785,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002399,
+      "to_system_id": 30002408,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.174,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002393,
+      "to_system_id": 30002394,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.673,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002393,
+      "to_system_id": 30002395,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.372,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002408,
+      "to_system_id": 30002409,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.983,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002408,
+      "to_system_id": 30002410,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.869,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002409,
+      "to_system_id": 30002410,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.641,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002409,
+      "to_system_id": 30002413,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.587,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002413,
+      "to_system_id": 30002414,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.83,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002414,
+      "to_system_id": 30002415,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.731,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002415,
+      "to_system_id": 30002416,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.165,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002416,
+      "to_system_id": 30002417,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.734,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002416,
+      "to_system_id": 30002418,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.879,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002417,
+      "to_system_id": 30002418,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.842,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002417,
+      "to_system_id": 30002419,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.713,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002418,
+      "to_system_id": 30002419,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.866,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002419,
+      "to_system_id": 30002420,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 0.831,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002401,
+      "to_system_id": 30002412,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 3.982,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002415,
+      "to_system_id": 30002419,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 1.303,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30002394,
+      "to_system_id": 30002420,
+      "from_region_id": 10000028,
+      "to_region_id": 10000028,
+      "distance_ly": 4.054,
+      "bridge": false
+    }
+  ]
+}

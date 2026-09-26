@@ -1,0 +1,65 @@
+{
+  "region": {
+    "region_id": 19000001,
+    "name": "GPMR-01",
+    "constellation_ids": [
+      26000001
+    ],
+    "position": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "systems": [
+      36000001
+    ],
+    "constellations": [
+      26000001
+    ],
+    "system_count": 1,
+    "position_2d": null,
+    "bounds_2d": null
+  },
+  "constellations": {
+    "26000001": {
+      "constellation_id": 26000001,
+      "region_id": 19000001,
+      "name": "GPMC-01",
+      "solar_system_ids": [
+        36000001
+      ],
+      "position": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    }
+  },
+  "systems": {
+    "36000001": {
+      "system_id": 36000001,
+      "name": "GPMS-01",
+      "region_id": 19000001,
+      "constellation_id": 26000001,
+      "security": 1.0,
+      "position": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    }
+  },
+  "jumps": []
+}

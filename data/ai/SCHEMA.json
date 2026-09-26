@@ -1,0 +1,28 @@
+{
+  "purpose": "AI-friendly EVE universe topology exports generated from CCP SDE. Use these files instead of scraping DOTLAN.",
+  "files": {
+    "regions.jsonl/csv": "One region per row: region_id, name, system_count, constellation_count.",
+    "constellations.jsonl": "One constellation per row with region linkage and system_ids.",
+    "systems.jsonl": "One solar system per row with region/constellation names, security, coordinates, neighbor_ids, neighbor_names, and graph metrics. x/y/z are physical; x2d/y2d are CCP's official schematic layout, null where none is published.",
+    "systems.csv": "Flat system table without neighbor arrays; best for spreadsheets and SQL imports.",
+    "jumps.jsonl/csv": "Undirected stargate links, one row per system pair, each flagged as a bridge or not.",
+    "cross_region_jumps.jsonl": "Subset of jumps that cross region boundaries; useful for pipe/choke analysis.",
+    "chokepoints.jsonl": "Systems that are articulation points or have at most two gates, ranked by betweenness.",
+    "bridges.jsonl": "Stargate links whose removal would disconnect the systems they join.",
+    "../eve_map.sqlite": "SQLite copy with regions, constellations, systems, jumps tables, including graph metrics."
+  },
+  "notes": [
+    "Coordinates x/y/z are SDE physical universe coordinates in meters, and are what distance_ly and every jump-range calculation use.",
+    "npc_stations is how many NPC stations the system contains. Zero means no NPC station, not that docking is impossible: player structures are not in the export and cannot be enumerated without access.",
+    "x2d/y2d are CCP's official two-dimensional map layout from position2D, for display only. They are null for the 3,005 systems with no published layout - 2,604 in J-space, 200 in the Abyssal proving grounds, and 201 in CCP's VR-* and GPMR-01 test regions, none of which carry a stargate. Every system reachable by gate has one. Null is not the origin. Draw with screenY = -y2d.",
+    "distance_ly is straight-line system-center distance, not route length.",
+    "Jumps are stargate topology only; wormholes, ansiblexes, filaments, cynos, and live sovereignty are not included.",
+    "Region JSON files live in data/regions/<Region_Name>.json for targeted loading.",
+    "degree is the number of stargate links.",
+    "articulation is true when removing the system would disconnect systems that could otherwise still reach each other.",
+    "bridge is true for a link whose removal would do the same.",
+    "betweenness is the share of all shortest paths between all other system pairs that passes through the system, by Brandes' algorithm, halved for the undirected double count. It is a structural measure over the whole stargate graph, not a traffic measure.",
+    "component groups systems that can reach each other by stargate. Pochven is a separate component with no external links, so no route crosses it.",
+    "Systems with no stargates report zero for every metric and a component of -1."
+  ]
+}

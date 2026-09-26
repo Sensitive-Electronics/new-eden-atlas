@@ -1,0 +1,2522 @@
+{
+  "region": {
+    "region_id": 10000037,
+    "name": "Everyshore",
+    "constellation_ids": [
+      20000441,
+      20000442,
+      20000443,
+      20000444,
+      20000445,
+      20000446,
+      20000447
+    ],
+    "position": [
+      -1.948220132942805e+17,
+      8827663029283092.0,
+      2.025595380492079e+16
+    ],
+    "systems": [
+      30003028,
+      30003059,
+      30003015,
+      30003042,
+      30003012,
+      30003062,
+      30003051,
+      30003030,
+      30003009,
+      30003031,
+      30003038,
+      30003053,
+      30003047,
+      30003055,
+      30003018,
+      30003014,
+      30003040,
+      30003026,
+      30003048,
+      30003019,
+      30003041,
+      30003044,
+      30003045,
+      30003033,
+      30003036,
+      30003023,
+      30003035,
+      30003057,
+      30003010,
+      30003017,
+      30003029,
+      30003016,
+      30003013,
+      30003049,
+      30003039,
+      30003025,
+      30003060,
+      30003024,
+      30003034,
+      30003032,
+      30003061,
+      30003011,
+      30003021,
+      30003056,
+      30003022,
+      30003050,
+      30003058,
+      30003037,
+      30003054,
+      30003052,
+      30003020,
+      30003043,
+      30003027
+    ],
+    "constellations": [
+      20000442,
+      20000446,
+      20000445,
+      20000447,
+      20000444,
+      20000441,
+      20000443
+    ],
+    "system_count": 53,
+    "position_2d": [
+      -1.931197418161078e+17,
+      3081698007703848.0
+    ],
+    "bounds_2d": [
+      -2.239367218931463e+17,
+      -2.6708049400100016e+16,
+      -1.623027617390693e+17,
+      3.287144541550771e+16
+    ]
+  },
+  "constellations": {
+    "20000442": {
+      "constellation_id": 20000442,
+      "region_id": 10000037,
+      "name": "Chasnaye",
+      "solar_system_ids": [
+        30003017,
+        30003018,
+        30003019,
+        30003020,
+        30003021,
+        30003022,
+        30003023
+      ],
+      "position": [
+        -1.740604469569995e+17,
+        1.62911930539073e+16,
+        2.0525269139421144e+16
+      ],
+      "position_2d": [
+        -1.807929497852924e+17,
+        7190628684642312.0
+      ],
+      "bounds_2d": [
+        -1.8490188046223088e+17,
+        -6163396015407696.0,
+        -1.7668401910835395e+17,
+        2.054465338469232e+16
+      ]
+    },
+    "20000446": {
+      "constellation_id": 20000446,
+      "region_id": 10000037,
+      "name": "Elalan",
+      "solar_system_ids": [
+        30003045,
+        30003047,
+        30003048,
+        30003049,
+        30003050,
+        30003051,
+        30003052,
+        30003053,
+        30003054,
+        30003055,
+        30003056
+      ],
+      "position": [
+        -2.1558357963156154e+17,
+        2.1413883350506516e+16,
+        2.489798646390856e+16
+      ],
+      "position_2d": [
+        -2.0750099918539245e+17,
+        2.259911872316155e+16
+      ],
+      "bounds_2d": [
+        -2.239367218931463e+17,
+        1.2326792030815392e+16,
+        -1.910652764776386e+17,
+        3.287144541550771e+16
+      ]
+    },
+    "20000445": {
+      "constellation_id": 20000445,
+      "region_id": 10000037,
+      "name": "Giatole",
+      "solar_system_ids": [
+        30003038,
+        30003039,
+        30003040,
+        30003041,
+        30003042,
+        30003043,
+        30003044
+      ],
+      "position": [
+        -1.9329813452234464e+17,
+        1.054247887833551e+16,
+        2.2927081954447816e+16
+      ],
+      "position_2d": [
+        -1.9209250914687318e+17,
+        -1.2326792030815392e+16
+      ],
+      "bounds_2d": [
+        -1.9722867249304627e+17,
+        -2.259911872316155e+16,
+        -1.869563458007001e+17,
+        -2054465338469232.0
+      ]
+    },
+    "20000447": {
+      "constellation_id": 20000447,
+      "region_id": 10000037,
+      "name": "Marele",
+      "solar_system_ids": [
+        30003057,
+        30003058,
+        30003059,
+        30003060,
+        30003061,
+        30003062
+      ],
+      "position": [
+        -2.0170729864960394e+17,
+        -1.2533014553205172e+16,
+        9296668484968892.0
+      ],
+      "position_2d": [
+        -2.1366439520080013e+17,
+        -1.849018804622309e+16
+      ],
+      "bounds_2d": [
+        -2.2188225655467706e+17,
+        -2.6708049400100016e+16,
+        -2.054465338469232e+17,
+        -1.027232669234616e+16
+      ]
+    },
+    "20000444": {
+      "constellation_id": 20000444,
+      "region_id": 10000037,
+      "name": "Odilis",
+      "solar_system_ids": [
+        30003031,
+        30003032,
+        30003033,
+        30003034,
+        30003035,
+        30003036,
+        30003037
+      ],
+      "position": [
+        -1.7671156108396768e+17,
+        3.018834061177135e+16,
+        3.1215239124872696e+16
+      ],
+      "position_2d": [
+        -1.7052062309294624e+17,
+        1.7462955376988472e+16
+      ],
+      "bounds_2d": [
+        -1.7873848444682317e+17,
+        6163396015407696.0,
+        -1.623027617390693e+17,
+        2.876251473856925e+16
+      ]
+    },
+    "20000441": {
+      "constellation_id": 20000441,
+      "region_id": 10000037,
+      "name": "Osnins",
+      "solar_system_ids": [
+        30003009,
+        30003010,
+        30003011,
+        30003012,
+        30003013,
+        30003014,
+        30003015,
+        30003016
+      ],
+      "position": [
+        -2.001528522549957e+17,
+        2.2112944287074544e+16,
+        1.4551586353517396e+16
+      ],
+      "position_2d": [
+        -2.0236483583921933e+17,
+        2054465338469232.0
+      ],
+      "bounds_2d": [
+        -2.1160992986233088e+17,
+        -4108930676938464.0,
+        -1.931197418161078e+17,
+        8217861353876928.0
+      ]
+    },
+    "20000443": {
+      "constellation_id": 20000443,
+      "region_id": 10000037,
+      "name": "Ysiette",
+      "solar_system_ids": [
+        30003024,
+        30003025,
+        30003026,
+        30003027,
+        30003028,
+        30003029,
+        30003030
+      ],
+      "position": [
+        -1.809127001518695e+17,
+        2.648633853447269e+16,
+        1.5114970911687134e+16
+      ],
+      "position_2d": [
+        -1.7154785576218086e+17,
+        -1.6435722707753856e+16
+      ],
+      "bounds_2d": [
+        -1.807929497852924e+17,
+        -2.259911872316155e+16,
+        -1.623027617390693e+17,
+        -1.027232669234616e+16
+      ]
+    }
+  },
+  "systems": {
+    "30003028": {
+      "system_id": 30003028,
+      "name": "Aclan",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.506709,
+      "position": [
+        -1.8957729336961462e+17,
+        1.3949403675204294e+16,
+        6896751892527954.0
+      ],
+      "position_2d": [
+        -1.7052062309294624e+17,
+        -1.2326792030815392e+16
+      ],
+      "npc_stations": 6,
+      "neighbors": [
+        30003029
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003059": {
+      "system_id": 30003059,
+      "name": "Adeel",
+      "region_id": 10000037,
+      "constellation_id": 20000447,
+      "security": 0.353048,
+      "position": [
+        -1.9598298706566806e+17,
+        -8442963886360209.0,
+        3768114294586566.0
+      ],
+      "position_2d": [
+        -2.1571886053926938e+17,
+        -2.6708049400100016e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003058
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003015": {
+      "system_id": 30003015,
+      "name": "Aice",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.691167,
+      "position": [
+        -2.043518651993996e+17,
+        2.2601368725265556e+16,
+        2.0313805836281988e+16
+      ],
+      "position_2d": [
+        -2.0750099918539245e+17,
+        6163396015407696.0
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003012,
+        30003014,
+        30003045,
+        30003013
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 6967.19,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003042": {
+      "system_id": 30003042,
+      "name": "Alachene",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.342365,
+      "position": [
+        -1.8666983054819088e+17,
+        -1796437805044441.0,
+        2.5224842084108148e+16
+      ],
+      "position_2d": [
+        -1.910652764776386e+17,
+        -1.2326792030815392e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003038,
+        30003043
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 511.159,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003012": {
+      "system_id": 30003012,
+      "name": "Amattens",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.59005,
+      "position": [
+        -2.0221110163197856e+17,
+        1.7537501574935682e+16,
+        1.517598706905477e+16
+      ],
+      "position_2d": [
+        -2.0750099918539245e+17,
+        -2054465338469232.0
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003015,
+        30003009,
+        30003014,
+        30003016,
+        30003013,
+        30003043
+      ],
+      "metrics": {
+        "degree": 6,
+        "betweenness": 3700.157,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003062": {
+      "system_id": 30003062,
+      "name": "Angatalie",
+      "region_id": 10000037,
+      "constellation_id": 20000447,
+      "security": 0.160466,
+      "position": [
+        -2.0914606029442867e+17,
+        -1.7634270945954414e+16,
+        1.1273290629657806e+16
+      ],
+      "position_2d": [
+        -2.2188225655467706e+17,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002728,
+        30003060
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 52430.437,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003051": {
+      "system_id": 30003051,
+      "name": "Antollare",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.689427,
+      "position": [
+        -2.07162585723694e+17,
+        2.0549871753812996e+16,
+        2.82411970044765e+16
+      ],
+      "position_2d": [
+        -1.9517420715457702e+17,
+        1.849018804622309e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003053,
+        30003045,
+        30003049
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 2491.995,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003030": {
+      "system_id": 30003030,
+      "name": "Ardallabier",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.713632,
+      "position": [
+        -1.7224810693412438e+17,
+        3.2987365442064796e+16,
+        1.3068506714265354e+16
+      ],
+      "position_2d": [
+        -1.6846615775447702e+17,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30002648,
+        30002699,
+        30002692,
+        30003025
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 79303.124,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003009": {
+      "system_id": 30003009,
+      "name": "Arnatele",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.622931,
+      "position": [
+        -2.0031196574479658e+17,
+        2.1827363909426764e+16,
+        1.1535452138012288e+16
+      ],
+      "position_2d": [
+        -1.9722867249304627e+17,
+        4108930676938464.0
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003012,
+        30003014,
+        30003010,
+        30003016,
+        30003013,
+        30003011
+      ],
+      "metrics": {
+        "degree": 6,
+        "betweenness": 4168.795,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003031": {
+      "system_id": 30003031,
+      "name": "Athinard",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.949,
+      "position": [
+        -1.8607473667926422e+17,
+        3.415104318176241e+16,
+        2.499708754374603e+16
+      ],
+      "position_2d": [
+        -1.623027617390693e+17,
+        1.027232669234616e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30002659,
+        30003033,
+        30003032
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 2621.876,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003038": {
+      "system_id": 30003038,
+      "name": "Atlanins",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.629053,
+      "position": [
+        -1.86796750556065e+17,
+        1.1613111253916808e+16,
+        2.5612101865540324e+16
+      ],
+      "position_2d": [
+        -1.869563458007001e+17,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003042,
+        30003018,
+        30003040,
+        30003044,
+        30003039,
+        30003027
+      ],
+      "metrics": {
+        "degree": 6,
+        "betweenness": 30632.448,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003053": {
+      "system_id": 30003053,
+      "name": "Avele",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.710144,
+      "position": [
+        -2.0021740106958115e+17,
+        1.805811969812191e+16,
+        3.1881949881647616e+16
+      ],
+      "position_2d": [
+        -1.910652764776386e+17,
+        1.4381257369284624e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003051,
+        30003039
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 4792.138,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003047": {
+      "system_id": 30003047,
+      "name": "Averon",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.576088,
+      "position": [
+        -2.1566980166320854e+17,
+        1.93194447054938e+16,
+        1.898513131659491e+16
+      ],
+      "position_2d": [
+        -2.0339206850845395e+17,
+        2.054465338469232e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003048,
+        30003045,
+        30003050,
+        30003054
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 4146.901,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003055": {
+      "system_id": 30003055,
+      "name": "Aydoteaux",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.680553,
+      "position": [
+        -2.3094975819354192e+17,
+        2.632220365736216e+16,
+        1.7914023046169504e+16
+      ],
+      "position_2d": [
+        -2.239367218931463e+17,
+        2.876251473856925e+16
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30005288,
+        30003052
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 10583.55,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003018": {
+      "system_id": 30003018,
+      "name": "Azer",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.65707,
+      "position": [
+        -1.751326164497706e+17,
+        1.625397949190275e+16,
+        2.3516582794482908e+16
+      ],
+      "position_2d": [
+        -1.8284741512376166e+17,
+        2054465338469232.0
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30003038,
+        30003019,
+        30003017,
+        30003021,
+        30003020
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 26623.793,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003014": {
+      "system_id": 30003014,
+      "name": "Bereye",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.9,
+      "position": [
+        -1.97746845588e+17,
+        1.97758337026e+16,
+        1.82699390592e+16
+      ],
+      "position_2d": [
+        -1.9722867249304627e+17,
+        -4108930676938464.0
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003015,
+        30003012,
+        30003009,
+        30003010,
+        30003013,
+        30003039,
+        30004968
+      ],
+      "metrics": {
+        "degree": 7,
+        "betweenness": 56303.307,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003040": {
+      "system_id": 30003040,
+      "name": "Bille",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.515858,
+      "position": [
+        -1.9529482931425658e+17,
+        8380389875433821.0,
+        2.114910935657604e+16
+      ],
+      "position_2d": [
+        -1.9517420715457702e+17,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003038,
+        30003044,
+        30003039,
+        30003043
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 7097.713,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003026": {
+      "system_id": 30003026,
+      "name": "Blameston",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.949,
+      "position": [
+        -1.819926825967841e+17,
+        4.132038951243576e+16,
+        2.378900248077101e+16
+      ],
+      "position_2d": [
+        -1.623027617390693e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003025,
+        30002655
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 3321.773,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003048": {
+      "system_id": 30003048,
+      "name": "Carirgnottin",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.624878,
+      "position": [
+        -2.1971086349656778e+17,
+        2.1159838614970068e+16,
+        2.041995751679467e+16
+      ],
+      "position_2d": [
+        -2.1160992986233088e+17,
+        2.876251473856925e+16
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30003047,
+        30003050,
+        30003054,
+        30003052
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 28087.462,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003019": {
+      "system_id": 30003019,
+      "name": "Cherore",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.702886,
+      "position": [
+        -1.75769497105727e+17,
+        1.9965608056138256e+16,
+        1.9948119954873364e+16
+      ],
+      "position_2d": [
+        -1.7668401910835395e+17,
+        0.0
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003018,
+        30003017,
+        30003029,
+        30003021
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 4761.617,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003041": {
+      "system_id": 30003041,
+      "name": "Colcer",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.851225,
+      "position": [
+        -1.8906640576115296e+17,
+        2.2881395561715464e+16,
+        2.489236308797967e+16
+      ],
+      "position_2d": [
+        -1.869563458007001e+17,
+        -2054465338469232.0
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30003039
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003044": {
+      "system_id": 30003044,
+      "name": "Elarel",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.394527,
+      "position": [
+        -1.9359646128066326e+17,
+        1966675396761691.0,
+        2.1275576919384056e+16
+      ],
+      "position_2d": [
+        -1.9722867249304627e+17,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003038,
+        30003040,
+        30003057
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 16752.366,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003045": {
+      "system_id": 30003045,
+      "name": "Enedore",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.646758,
+      "position": [
+        -2.102490401857386e+17,
+        2.0002442561181476e+16,
+        2.4533187999905652e+16
+      ],
+      "position_2d": [
+        -2.0339206850845395e+17,
+        1.4381257369284624e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003015,
+        30003051,
+        30003047,
+        30003049,
+        30003054
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 9425.63,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003033": {
+      "system_id": 30003033,
+      "name": "Ethernity",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.935634,
+      "position": [
+        -1.815625141122104e+17,
+        2.835353713023818e+16,
+        2.9561398296756492e+16
+      ],
+      "position_2d": [
+        -1.7052062309294624e+17,
+        1.027232669234616e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003031,
+        30002715,
+        30003035,
+        30003017,
+        30003034,
+        30003032
+      ],
+      "metrics": {
+        "degree": 6,
+        "betweenness": 43739.339,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003036": {
+      "system_id": 30003036,
+      "name": "Frarolle",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.79046,
+      "position": [
+        -1.706032966131892e+17,
+        2.843906790854779e+16,
+        3.743339070599936e+16
+      ],
+      "position_2d": [
+        -1.725750884314155e+17,
+        2.6708049400100016e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003035,
+        30003037
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003023": {
+      "system_id": 30003023,
+      "name": "Gerper",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.354437,
+      "position": [
+        -1.693981009446351e+17,
+        5894930793245491.0,
+        1.3808632183571624e+16
+      ],
+      "position_2d": [
+        -1.8490188046223088e+17,
+        2.054465338469232e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003022
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003035": {
+      "system_id": 30003035,
+      "name": "Gicodel",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.858426,
+      "position": [
+        -1.772354776360019e+17,
+        2.6225638041780292e+16,
+        3.650598888714958e+16
+      ],
+      "position_2d": [
+        -1.7052062309294624e+17,
+        2.054465338469232e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003033,
+        30003036,
+        30003034
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 10450.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003057": {
+      "system_id": 30003057,
+      "name": "Groothese",
+      "region_id": 10000037,
+      "constellation_id": 20000447,
+      "security": 0.268258,
+      "position": [
+        -1.942685370047792e+17,
+        -7431758160455928.0,
+        1.6273325192424296e+16
+      ],
+      "position_2d": [
+        -2.054465338469232e+17,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 7,
+      "neighbors": [
+        30003044,
+        30003058
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 17465.051,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003010": {
+      "system_id": 30003010,
+      "name": "Halle",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.728363,
+      "position": [
+        -1.9373878648788394e+17,
+        2.460344411768737e+16,
+        1.3462739849628178e+16
+      ],
+      "position_2d": [
+        -1.931197418161078e+17,
+        0.0
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003009,
+        30003014,
+        30003011
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 2596.611,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003017": {
+      "system_id": 30003017,
+      "name": "Harerget",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.833758,
+      "position": [
+        -1.737659678200041e+17,
+        2.6990150189946436e+16,
+        2.7241906095270664e+16
+      ],
+      "position_2d": [
+        -1.7873848444682317e+17,
+        6163396015407696.0
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30003018,
+        30003019,
+        30002708,
+        30003033
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 41645.306,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003029": {
+      "system_id": 30003029,
+      "name": "Jaschercis",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.612704,
+      "position": [
+        -1.8163205085656637e+17,
+        1.6269738377815842e+16,
+        1.3704104523002632e+16
+      ],
+      "position_2d": [
+        -1.7668401910835395e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003028,
+        30003019,
+        30003024,
+        30002662,
+        30003027
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 7416.768,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003016": {
+      "system_id": 30003016,
+      "name": "Junsoraert",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.524183,
+      "position": [
+        -2.0319846160428912e+17,
+        1.801613992087467e+16,
+        8789366870752803.0
+      ],
+      "position_2d": [
+        -2.0339206850845395e+17,
+        2054465338469232.0
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003012,
+        30003009,
+        30003013
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003013": {
+      "system_id": 30003013,
+      "name": "Jurlesel",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.59925,
+      "position": [
+        -2.0746524565429728e+17,
+        2.2490145056866836e+16,
+        1.4117503116591016e+16
+      ],
+      "position_2d": [
+        -2.1160992986233088e+17,
+        2054465338469232.0
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30003015,
+        30003012,
+        30003009,
+        30003014,
+        30003016
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 1640.224,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003049": {
+      "system_id": 30003049,
+      "name": "Laic",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.793173,
+      "position": [
+        -2.0500937440238704e+17,
+        2.8031241391390516e+16,
+        2.7590342052726376e+16
+      ],
+      "position_2d": [
+        -1.9722867249304627e+17,
+        1.2326792030815392e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003051,
+        30003045
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003039": {
+      "system_id": 30003039,
+      "name": "Leremblompes",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.647193,
+      "position": [
+        -1.9394329161e+17,
+        1.36820222265e+16,
+        2.37648169066e+16
+      ],
+      "position_2d": [
+        -1.910652764776386e+17,
+        -6163396015407696.0
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003038,
+        30003053,
+        30003014,
+        30003040,
+        30003041,
+        30003043
+      ],
+      "metrics": {
+        "degree": 6,
+        "betweenness": 27191.586,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003025": {
+      "system_id": 30003025,
+      "name": "Lirsautton",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.835556,
+      "position": [
+        -1.7969967681758128e+17,
+        3.2082745422712664e+16,
+        1.6234609881669044e+16
+      ],
+      "position_2d": [
+        -1.664116924160078e+17,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 6,
+      "neighbors": [
+        30003030,
+        30003026,
+        30003024,
+        30003032
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 51121.948,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003060": {
+      "system_id": 30003060,
+      "name": "Mannar",
+      "region_id": 10000037,
+      "constellation_id": 20000447,
+      "security": 0.285023,
+      "position": [
+        -2.07476501602e+17,
+        -1.52711361976e+16,
+        6372618774000000.0
+      ],
+      "position_2d": [
+        -2.177733258777386e+17,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 6,
+      "neighbors": [
+        30003062,
+        30003061,
+        30003058
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 77460.01,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003024": {
+      "system_id": 30003024,
+      "name": "Marosier",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.603446,
+      "position": [
+        -1.7960234597466422e+17,
+        2.3439066604818824e+16,
+        6440939342603261.0
+      ],
+      "position_2d": [
+        -1.7462955376988474e+17,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003029,
+        30003025,
+        30003027
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 32555.714,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003034": {
+      "system_id": 30003034,
+      "name": "Mattere",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.949,
+      "position": [
+        -1.795713148713393e+17,
+        3.1648246227299324e+16,
+        3.236243539567934e+16
+      ],
+      "position_2d": [
+        -1.6435722707753856e+17,
+        1.6435722707753856e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002639,
+        30002706,
+        30003033,
+        30003035,
+        30003032
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 68150.048,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003032": {
+      "system_id": 30003032,
+      "name": "Meves",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.949,
+      "position": [
+        -1.8411218492922582e+17,
+        3.243691176367753e+16,
+        2.8236639449123764e+16
+      ],
+      "position_2d": [
+        -1.664116924160078e+17,
+        6163396015407696.0
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003031,
+        30002659,
+        30003033,
+        30003025,
+        30003034
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 30665.043,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003061": {
+      "system_id": 30003061,
+      "name": "Mormelot",
+      "region_id": 10000037,
+      "constellation_id": 20000447,
+      "security": 0.232084,
+      "position": [
+        -2.0719738352320765e+17,
+        -1.3002327027865724e+16,
+        2320011777513488.0
+      ],
+      "position_2d": [
+        -2.1366439520080013e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003060,
+        30002654
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 76002.891,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003011": {
+      "system_id": 30003011,
+      "name": "Mormoen",
+      "region_id": 10000037,
+      "constellation_id": 20000441,
+      "security": 0.71804,
+      "position": [
+        -1.928404588556941e+17,
+        2.6688386999213404e+16,
+        1.0948608032709696e+16
+      ],
+      "position_2d": [
+        -1.931197418161078e+17,
+        8217861353876928.0
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003009,
+        30003010
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003021": {
+      "system_id": 30003021,
+      "name": "Mosson",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.65658,
+      "position": [
+        -1.7872279296936384e+17,
+        1.6152243747780532e+16,
+        1.959149952552777e+16
+      ],
+      "position_2d": [
+        -1.807929497852924e+17,
+        -6163396015407696.0
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003018,
+        30003019,
+        30003027
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 29.188,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003056": {
+      "system_id": 30003056,
+      "name": "Muer",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.581164,
+      "position": [
+        -2.1636952434905296e+17,
+        1.5019085225761946e+16,
+        2.5916341674914084e+16
+      ],
+      "position_2d": [
+        -2.0750099918539245e+17,
+        3.287144541550771e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003050,
+        30003054
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003022": {
+      "system_id": 30003022,
+      "name": "Mya",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.371081,
+      "position": [
+        -1.6970986862876285e+17,
+        5592235917868161.0,
+        1.6947321048657586e+16
+      ],
+      "position_2d": [
+        -1.8490188046223088e+17,
+        1.4381257369284624e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003023,
+        30003020
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003050": {
+      "system_id": 30003050,
+      "name": "Odixie",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.550303,
+      "position": [
+        -2.2177345340255347e+17,
+        1.5698607683129564e+16,
+        1.9895754048584796e+16
+      ],
+      "position_2d": [
+        -2.0339206850845395e+17,
+        2.876251473856925e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003047,
+        30003048,
+        30003056,
+        30003054
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 2495.076,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003058": {
+      "system_id": 30003058,
+      "name": "Olide",
+      "region_id": 10000037,
+      "constellation_id": 20000447,
+      "security": 0.7416,
+      "position": [
+        -2.0029967984087114e+17,
+        -1.2700995005032436e+16,
+        8548456481539123.0
+      ],
+      "position_2d": [
+        -2.1160992986233088e+17,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 9,
+      "neighbors": [
+        30003059,
+        30003057,
+        30003060
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 23833.378,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003037": {
+      "system_id": 30003037,
+      "name": "Quier",
+      "region_id": 10000037,
+      "constellation_id": 20000444,
+      "security": 0.733882,
+      "position": [
+        -1.673483854886711e+17,
+        2.7648886144385984e+16,
+        3.596194773060987e+16
+      ],
+      "position_2d": [
+        -1.7873848444682317e+17,
+        2.876251473856925e+16
+      ],
+      "npc_stations": 6,
+      "neighbors": [
+        30003036
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003054": {
+      "system_id": 30003054,
+      "name": "Scuelazyns",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.641687,
+      "position": [
+        -2.187964391233374e+17,
+        1.8954642563100932e+16,
+        2.4262256232222476e+16
+      ],
+      "position_2d": [
+        -2.1160992986233088e+17,
+        2.054465338469232e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003047,
+        30003048,
+        30003045,
+        30003056,
+        30003050
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 6876.825,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003052": {
+      "system_id": 30003052,
+      "name": "Tolle",
+      "region_id": 10000037,
+      "constellation_id": 20000446,
+      "security": 0.708052,
+      "position": [
+        -2.2659141105439674e+17,
+        2.62201857234275e+16,
+        2.0221225665417076e+16
+      ],
+      "position_2d": [
+        -2.177733258777386e+17,
+        2.876251473856925e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003055,
+        30003048,
+        30005201
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 37386.216,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003020": {
+      "system_id": 30003020,
+      "name": "Torvi",
+      "region_id": 10000037,
+      "constellation_id": 20000442,
+      "security": 0.530309,
+      "position": [
+        -1.6968949021354506e+17,
+        1.2378366297536356e+16,
+        2.5127216967988664e+16
+      ],
+      "position_2d": [
+        -1.8490188046223088e+17,
+        8217861353876928.0
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003018,
+        30003022
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 10450.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003043": {
+      "system_id": 30003043,
+      "name": "Uphene",
+      "region_id": 10000037,
+      "constellation_id": 20000445,
+      "security": 0.578327,
+      "position": [
+        -1.9992643849649843e+17,
+        1.3235080028428502e+16,
+        2.0242062043355308e+16
+      ],
+      "position_2d": [
+        -1.9722867249304627e+17,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003042,
+        30003012,
+        30003040,
+        30003039
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 2069.687,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003027": {
+      "system_id": 30003027,
+      "name": "Vaurent",
+      "region_id": 10000037,
+      "constellation_id": 20000443,
+      "security": 0.58431,
+      "position": [
+        -1.861839414437159e+17,
+        1.1652287556509618e+16,
+        1.838404898904036e+16
+      ],
+      "position_2d": [
+        -1.807929497852924e+17,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003038,
+        30003029,
+        30003024,
+        30003021
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 20293.054,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    }
+  },
+  "jumps": [
+    {
+      "from_system_id": 30003009,
+      "to_system_id": 30003010,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.781,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003009,
+      "to_system_id": 30003011,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.944,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003009,
+      "to_system_id": 30003012,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.628,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003009,
+      "to_system_id": 30003013,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.807,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003009,
+      "to_system_id": 30003014,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.792,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003009,
+      "to_system_id": 30003016,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.583,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003024,
+      "to_system_id": 30003025,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.381,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003024,
+      "to_system_id": 30003027,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.905,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003024,
+      "to_system_id": 30003029,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.1,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003025,
+      "to_system_id": 30003026,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.284,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003025,
+      "to_system_id": 30003030,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.861,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003027,
+      "to_system_id": 30003029,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.845,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003027,
+      "to_system_id": 30003038,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.767,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003021,
+      "to_system_id": 30003027,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.93,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003028,
+      "to_system_id": 30003029,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.133,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003019,
+      "to_system_id": 30003029,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.986,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003010,
+      "to_system_id": 30003011,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.358,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003010,
+      "to_system_id": 30003014,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.835,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003017,
+      "to_system_id": 30003018,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.21,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003017,
+      "to_system_id": 30003019,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.091,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003017,
+      "to_system_id": 30003033,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.872,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003018,
+      "to_system_id": 30003019,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.548,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003018,
+      "to_system_id": 30003020,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.727,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003018,
+      "to_system_id": 30003038,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.345,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003018,
+      "to_system_id": 30003021,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.562,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003031,
+      "to_system_id": 30003032,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.439,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003031,
+      "to_system_id": 30003033,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.914,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003019,
+      "to_system_id": 30003021,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.511,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003012,
+      "to_system_id": 30003013,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.771,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003012,
+      "to_system_id": 30003014,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.621,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003012,
+      "to_system_id": 30003015,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.795,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003012,
+      "to_system_id": 30003016,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.685,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003012,
+      "to_system_id": 30003043,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.743,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003013,
+      "to_system_id": 30003014,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.153,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003013,
+      "to_system_id": 30003015,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.733,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003013,
+      "to_system_id": 30003016,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.863,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003020,
+      "to_system_id": 30003022,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.123,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003014,
+      "to_system_id": 30003015,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.789,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003014,
+      "to_system_id": 30003039,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.956,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003015,
+      "to_system_id": 30003045,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.814,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003038,
+      "to_system_id": 30003039,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.81,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003038,
+      "to_system_id": 30003040,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.071,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003038,
+      "to_system_id": 30003042,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.418,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003038,
+      "to_system_id": 30003044,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.329,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003039,
+      "to_system_id": 30003040,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.641,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003039,
+      "to_system_id": 30003041,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.107,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003039,
+      "to_system_id": 30003043,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.735,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003039,
+      "to_system_id": 30003053,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.179,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003045,
+      "to_system_id": 30003047,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.823,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003045,
+      "to_system_id": 30003049,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.064,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003045,
+      "to_system_id": 30003051,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.513,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003045,
+      "to_system_id": 30003054,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.911,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003040,
+      "to_system_id": 30003043,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.716,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003040,
+      "to_system_id": 30003044,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.701,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003042,
+      "to_system_id": 30003043,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 2.183,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003044,
+      "to_system_id": 30003057,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.128,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003047,
+      "to_system_id": 30003048,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.493,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003047,
+      "to_system_id": 30003050,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.756,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003047,
+      "to_system_id": 30003054,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.649,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003032,
+      "to_system_id": 30003033,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.528,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003032,
+      "to_system_id": 30003034,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.654,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003022,
+      "to_system_id": 30003023,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.335,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003033,
+      "to_system_id": 30003034,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.503,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003033,
+      "to_system_id": 30003035,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.894,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003057,
+      "to_system_id": 30003058,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.176,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003034,
+      "to_system_id": 30003035,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.762,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003048,
+      "to_system_id": 30003050,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.62,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003048,
+      "to_system_id": 30003052,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.903,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003048,
+      "to_system_id": 30003054,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.478,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003058,
+      "to_system_id": 30003059,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.816,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003058,
+      "to_system_id": 30003060,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.838,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003049,
+      "to_system_id": 30003051,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.826,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003050,
+      "to_system_id": 30003054,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.656,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003050,
+      "to_system_id": 30003056,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.858,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003051,
+      "to_system_id": 30003053,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.87,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003052,
+      "to_system_id": 30003055,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.521,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003054,
+      "to_system_id": 30003056,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.519,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003035,
+      "to_system_id": 30003036,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.746,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003036,
+      "to_system_id": 30003037,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.387,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003060,
+      "to_system_id": 30003061,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.492,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003060,
+      "to_system_id": 30003062,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 0.602,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003025,
+      "to_system_id": 30003032,
+      "from_region_id": 10000037,
+      "to_region_id": 10000037,
+      "distance_ly": 1.352,
+      "bridge": false
+    }
+  ]
+}

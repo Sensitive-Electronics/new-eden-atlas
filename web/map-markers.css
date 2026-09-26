@@ -1,0 +1,141 @@
+.system-hit,
+.system-dot {
+  display: none;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.system-node.compact > rect,
+.system-node.compact > text {
+  display: none;
+}
+
+.system-node.compact > .system-dot {
+  display: block;
+}
+
+.system-node.compact > .system-hit {
+  display: block;
+  pointer-events: all;
+  stroke: none;
+}
+
+.system-node:focus-visible .system-dot,
+.system-node:hover .system-dot {
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.system-node.on-route .system-dot { fill: #ff5fa2; stroke: #ffb0d0; }
+.system-node.on-jump .system-dot { fill: #9d8cff; stroke: #d0c8ff; }
+.system-node.in-range .system-dot { stroke: #b3a4ff; stroke-width: 2.5; }
+.system-node.excluded .system-dot { fill: #303941; stroke: #85939d; }
+.system-node.selected .system-dot { stroke: #fff; }
+
+.route-badge-group.compact,
+.constellation-label.label-crowded {
+  display: none;
+}
+
+.system-node .system-name,
+.system-node .system-info,
+.constellation-label {
+  letter-spacing: 0;
+}
+
+.system-node .system-info { font-size: 9px; }
+
+#map { touch-action: none; }
+
+/* Author display rules must not override an element's hidden state. `hidden`
+   works only because the UA stylesheet maps it to display:none, and any author
+   rule setting display beats that - so every class here that sets display has
+   to opt back in. The live bar's wormhole slot was the one that did not, and
+   it sat there reading "holes: off" with wormhole routing switched off. */
+.layout-bar[hidden],
+.constellations[hidden],
+.live-layer[hidden] {
+  display: none;
+}
+
+.layout-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-top: 1px solid var(--line);
+  font-size: .72rem;
+}
+
+.layout-label {
+  color: var(--muted);
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.layout-bar button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+}
+
+.layout-bar button[aria-pressed="true"] {
+  border-color: #4d7f95;
+  background: #14222a;
+  color: #cfe4ee;
+}
+
+.layout-bar button:disabled {
+  color: #657580;
+  border-color: #26323b;
+  cursor: not-allowed;
+}
+
+.layout-bar button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.layout-note {
+  flex: 1 1 200px;
+  min-width: 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.layout-note:empty { display: none; }
+
+/* Sovereignty. Holders are drawn as a ring around the system dot rather than by
+   recolouring it: security colour is what the map already means, and taking it
+   over for sovereignty would trade one fact for another rather than adding one. */
+.system-node .sov-ring {
+  display: none;
+  fill: none;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.system-node.compact > .sov-ring { display: block; }
+.system-node > rect.sov-outline {
+  fill: none;
+  stroke: var(--sov-colour);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+  filter: none;
+}
+.sov-error { color: var(--red); font-style: normal; }
+.layout-note.stale { color: var(--orange); }
+
+/* One live bar, three slots. Each layer keeps its own age because they run on
+   different cache windows, and a single merged age would be either the
+   optimistic one or a lie. */
+.live-layer { display: inline-flex; align-items: center; }
+.live-layer:empty { display: none; }

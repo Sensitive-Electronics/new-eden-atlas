@@ -1,0 +1,161 @@
+{
+  "region": {
+    "region_id": 11000033,
+    "name": "K-R00033",
+    "constellation_ids": [
+      21000334
+    ],
+    "position": [
+      6.740235039820452e+18,
+      1.539280797403168e+18,
+      -9.713256053927879e+18
+    ],
+    "systems": [
+      31000006,
+      31000004,
+      31000002,
+      31000003,
+      31000001
+    ],
+    "constellations": [
+      21000334
+    ],
+    "system_count": 5,
+    "position_2d": null,
+    "bounds_2d": null
+  },
+  "constellations": {
+    "21000334": {
+      "constellation_id": 21000334,
+      "region_id": 11000033,
+      "name": "K-C00334",
+      "solar_system_ids": [
+        31000001,
+        31000002,
+        31000003,
+        31000004,
+        31000006
+      ],
+      "position": [
+        6.827804192158759e+18,
+        1.6869211596052634e+18,
+        -9.795533211663692e+18
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    }
+  },
+  "systems": {
+    "31000006": {
+      "system_id": 31000006,
+      "name": "Azdaja Redoubt",
+      "region_id": 11000033,
+      "constellation_id": 21000334,
+      "security": -0.99,
+      "position": [
+        6.851740425709685e+18,
+        1.679294718115652e+18,
+        -9.788179393983353e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31000004": {
+      "system_id": 31000004,
+      "name": "Conflux Eyrie",
+      "region_id": 11000033,
+      "constellation_id": 21000334,
+      "security": -0.99,
+      "position": [
+        6.827372579272932e+18,
+        1.7252344327841083e+18,
+        -9.821296571091087e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31000002": {
+      "system_id": 31000002,
+      "name": "Liberated Barbican",
+      "region_id": 11000033,
+      "constellation_id": 21000334,
+      "security": -0.99,
+      "position": [
+        6.862328572493305e+18,
+        1.7163154175849277e+18,
+        -9.835131116484102e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31000003": {
+      "system_id": 31000003,
+      "name": "Sanctified Vidette",
+      "region_id": 11000033,
+      "constellation_id": 21000334,
+      "security": -0.99,
+      "position": [
+        6.800690715289705e+18,
+        1.6678644932179118e+18,
+        -9.815994309006981e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    },
+    "31000001": {
+      "system_id": 31000001,
+      "name": "Sentinel MZ",
+      "region_id": 11000033,
+      "constellation_id": 21000334,
+      "security": -0.99,
+      "position": [
+        6.82439111092887e+18,
+        1.7007138104750124e+18,
+        -9.808807909109498e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 0,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    }
+  },
+  "jumps": []
+}

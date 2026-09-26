@@ -1,0 +1,51 @@
+/* Regional stargate cartography.
+
+   Connections are the point of this map, so they are drawn brightly. Two links
+   that cross on the drawing are usually not connected in the universe graph,
+   so each line carries a dark casing: the later line's casing cuts the earlier
+   one, and the crossing reads as "passes over" rather than "joins" - the same
+   convention a road atlas uses for a bridge.
+
+   The casing is kept only a little wider than the line it carries. A heavy
+   casing separates crossings well but darkens the whole field, which works
+   against the brightness this is meant to deliver. */
+
+.gate-edge-halo {
+  fill: none;
+  stroke: #05080a;
+  stroke-width: 3.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  opacity: .95;
+}
+
+.edge.gate-edge {
+  stroke: var(--gate-edge, #9fd0e4);
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 1;
+}
+
+/* Eight channels, assigned only where links actually cross. They are close in
+   luminance so no single channel reads as more important than another: the
+   colour says "a different line", never "a more significant line". */
+.gate-edge-0 { --gate-edge: #7fc7e8; }
+.gate-edge-1 { --gate-edge: #74d2ae; }
+.gate-edge-2 { --gate-edge: #c0a8ee; }
+.gate-edge-3 { --gate-edge: #f0a98a; }
+.gate-edge-4 { --gate-edge: #5fd8d2; }
+.gate-edge-5 { --gate-edge: #e3c978; }
+.gate-edge-6 { --gate-edge: #a9bcc9; }
+.gate-edge-7 { --gate-edge: #e79ec0; }
+
+/* No rule for .edge.boundary here. Those exist only on the UNIVERSE map -
+   the regional map carries its boundary meaning on node borders, not edges -
+   so a rule here would restyle the one view this work is meant to leave
+   alone. Verified: the regional view has 0 boundary edges, the universe 161. */
+
+/* A selected route or capital chain must still read above the gate mesh, so
+   the gate layer steps back while one is displayed. */
+.viewport-has-overlay .edge.gate-edge { opacity: .72; }
+.viewport-has-overlay .gate-edge-halo { opacity: .85; }

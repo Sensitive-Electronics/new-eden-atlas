@@ -1,0 +1,11 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "What the map window may ask of the core: the commands registered in main.rs and nothing else. (It has said three, then seven, and `generate_handler!` now lists nine - the count went stale twice, by four and then by two, because a description cited as authority for what this window may reach was maintained by hand. It no longer states a number: `tests/contract.test.mjs` holds the handler list against CORE_COMMANDS and ADVISOR_COMMANDS, which is the inventory, and a sentence that repeats it can only drift from it.) Custom commands are not ACL-gated, so this grant covers only the core event channel. core:default was deliberately NOT used - it silently includes core:path (directory enumeration) and core:image, whose from_path command is an arbitrary file read that returns decoded bytes. Both are inert today because image decoding is not compiled in, and both arm themselves the moment a tray icon or any plugin enables it - in a webview that renders player-supplied killmail and alliance text.",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:event:default"
+  ]
+}

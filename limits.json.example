@@ -1,0 +1,4 @@
+{
+  "_comment": "Copy to limits.json beside the application data (the same directory as sso.json and live-store.json) to raise the live store's size cap. Omit the file entirely for the 256 MB default. Clamped to 16-4096 MB; anything unparseable falls back to the default rather than to no limit.",
+  "live_store_mb": 1024
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "New Eden Atlas",
+  "version": "1.0.0",
+  "identifier": "dev.shadowglyph.new-eden-atlas",
+  "build": {
+    "frontendDist": "../dist",
+    "beforeDevCommand": "python scripts/stage_shell.py",
+    "beforeBuildCommand": "python scripts/stage_shell.py"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "New Eden Atlas",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "label": "main",
+        "url": "web/index.html"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' ipc: http://ipc.localhost https://esi.evetech.net https://api.eve-scout.com"
+    },
+    "withGlobalTauri": true
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "deb", "appimage"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico",
+      "icons/icon.png"
+    ],
+    "publisher": "Shadowglyph",
+    "category": "Utility",
+    "shortDescription": "Offline-first map and tactical analysis for New Eden",
+    "longDescription": "A private, offline-first map of New Eden built from CCP's Static Data Export. The map, routing and analysis work with no network and no account; public ESI layers are optional and always displayed with their age."
+  }
+}
