@@ -1,0 +1,23 @@
+{
+  "_comment": [
+    "Copy this to sso.json beside the application's data and put your own client id in it.",
+    "That copy is the only one the application reads - load_config is never handed the",
+    "repository's directory - so a file here changes nothing at runtime.",
+    "",
+    "Register your own rather than reusing someone else's. The id is not a secret, but it",
+    "is an identity. If every fork shipped one id, then as far as CCP are concerned every",
+    "token on the planet belongs to that one application - one fork misbehaves and the rate",
+    "limit is shared, a revocation kills everyone, and a ban lands on whoever registered it.",
+    "",
+    "Register a public native application with PKCE at https://developers.eveonline.com.",
+    "There is no client secret, and there must not be: a secret in an open-source desktop",
+    "application is a secret on every user's disk.",
+    "",
+    "The callback must be registered character-for-character as the redirect below. CCP",
+    "match it exactly, which is also why the port is fixed - an ephemeral port cannot be",
+    "registered in advance."
+  ],
+  "client_id": "",
+  "callback_port": 47624,
+  "redirect_uri_to_register": "http://localhost:47624/callback"
+}

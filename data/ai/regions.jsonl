@@ -1,0 +1,114 @@
+{"region_id":11000001,"name":"A-R00001","system_count":143,"constellation_count":14}
+{"region_id":11000002,"name":"A-R00002","system_count":153,"constellation_count":14}
+{"region_id":11000003,"name":"A-R00003","system_count":62,"constellation_count":6}
+{"region_id":10000019,"name":"A821-A","system_count":46,"constellation_count":7}
+{"region_id":12000001,"name":"ADR01","system_count":40,"constellation_count":5}
+{"region_id":12000002,"name":"ADR02","system_count":40,"constellation_count":5}
+{"region_id":12000003,"name":"ADR03","system_count":40,"constellation_count":5}
+{"region_id":12000004,"name":"ADR04","system_count":40,"constellation_count":5}
+{"region_id":12000005,"name":"ADR05","system_count":40,"constellation_count":5}
+{"region_id":10000054,"name":"Aridia","system_count":80,"constellation_count":11}
+{"region_id":11000004,"name":"B-R00004","system_count":116,"constellation_count":11}
+{"region_id":11000005,"name":"B-R00005","system_count":102,"constellation_count":10}
+{"region_id":11000006,"name":"B-R00006","system_count":141,"constellation_count":14}
+{"region_id":11000007,"name":"B-R00007","system_count":50,"constellation_count":5}
+{"region_id":11000008,"name":"B-R00008","system_count":128,"constellation_count":16}
+{"region_id":10000069,"name":"Black Rise","system_count":47,"constellation_count":6}
+{"region_id":10000055,"name":"Branch","system_count":94,"constellation_count":14}
+{"region_id":11000009,"name":"C-R00009","system_count":67,"constellation_count":10}
+{"region_id":11000010,"name":"C-R00010","system_count":51,"constellation_count":8}
+{"region_id":11000011,"name":"C-R00011","system_count":86,"constellation_count":13}
+{"region_id":11000012,"name":"C-R00012","system_count":105,"constellation_count":16}
+{"region_id":11000013,"name":"C-R00013","system_count":43,"constellation_count":7}
+{"region_id":11000014,"name":"C-R00014","system_count":96,"constellation_count":15}
+{"region_id":11000015,"name":"C-R00015","system_count":58,"constellation_count":9}
+{"region_id":10000007,"name":"Cache","system_count":44,"constellation_count":7}
+{"region_id":10000014,"name":"Catch","system_count":108,"constellation_count":15}
+{"region_id":10000051,"name":"Cloud Ring","system_count":40,"constellation_count":6}
+{"region_id":10000053,"name":"Cobalt Edge","system_count":69,"constellation_count":10}
+{"region_id":10000012,"name":"Curse","system_count":50,"constellation_count":7}
+{"region_id":11000016,"name":"D-R00016","system_count":78,"constellation_count":10}
+{"region_id":11000017,"name":"D-R00017","system_count":25,"constellation_count":4}
+{"region_id":11000018,"name":"D-R00018","system_count":46,"constellation_count":7}
+{"region_id":11000019,"name":"D-R00019","system_count":94,"constellation_count":14}
+{"region_id":11000020,"name":"D-R00020","system_count":50,"constellation_count":8}
+{"region_id":11000021,"name":"D-R00021","system_count":115,"constellation_count":18}
+{"region_id":11000022,"name":"D-R00022","system_count":87,"constellation_count":14}
+{"region_id":11000023,"name":"D-R00023","system_count":28,"constellation_count":5}
+{"region_id":10000035,"name":"Deklein","system_count":68,"constellation_count":9}
+{"region_id":10000060,"name":"Delve","system_count":97,"constellation_count":15}
+{"region_id":10000001,"name":"Derelik","system_count":117,"constellation_count":16}
+{"region_id":10000005,"name":"Detorid","system_count":96,"constellation_count":14}
+{"region_id":10000036,"name":"Devoid","system_count":52,"constellation_count":8}
+{"region_id":10000043,"name":"Domain","system_count":189,"constellation_count":26}
+{"region_id":11000024,"name":"E-R00024","system_count":110,"constellation_count":12}
+{"region_id":11000025,"name":"E-R00025","system_count":100,"constellation_count":13}
+{"region_id":11000026,"name":"E-R00026","system_count":68,"constellation_count":9}
+{"region_id":11000027,"name":"E-R00027","system_count":71,"constellation_count":9}
+{"region_id":11000028,"name":"E-R00028","system_count":92,"constellation_count":12}
+{"region_id":11000029,"name":"E-R00029","system_count":90,"constellation_count":11}
+{"region_id":10000039,"name":"Esoteria","system_count":85,"constellation_count":12}
+{"region_id":10000064,"name":"Essence","system_count":65,"constellation_count":9}
+{"region_id":10000027,"name":"Etherium Reach","system_count":100,"constellation_count":15}
+{"region_id":10000037,"name":"Everyshore","system_count":53,"constellation_count":7}
+{"region_id":10001004,"name":"Exordium","system_count":53,"constellation_count":9}
+{"region_id":11000030,"name":"F-R00030","system_count":118,"constellation_count":15}
+{"region_id":10000046,"name":"Fade","system_count":27,"constellation_count":4}
+{"region_id":10000056,"name":"Feythabolis","system_count":89,"constellation_count":12}
+{"region_id":10000058,"name":"Fountain","system_count":115,"constellation_count":17}
+{"region_id":11000031,"name":"G-R00031","system_count":1,"constellation_count":1}
+{"region_id":19000001,"name":"GPMR-01","system_count":1,"constellation_count":1}
+{"region_id":10000029,"name":"Geminate","system_count":84,"constellation_count":11}
+{"region_id":10000067,"name":"Genesis","system_count":103,"constellation_count":15}
+{"region_id":10000011,"name":"Great Wildlands","system_count":101,"constellation_count":15}
+{"region_id":11000032,"name":"H-R00032","system_count":25,"constellation_count":3}
+{"region_id":10000030,"name":"Heimatar","system_count":83,"constellation_count":12}
+{"region_id":10000025,"name":"Immensea","system_count":84,"constellation_count":12}
+{"region_id":10000031,"name":"Impass","system_count":51,"constellation_count":7}
+{"region_id":10000009,"name":"Insmother","system_count":110,"constellation_count":16}
+{"region_id":10000017,"name":"J7HZ-F","system_count":77,"constellation_count":12}
+{"region_id":11000033,"name":"K-R00033","system_count":5,"constellation_count":1}
+{"region_id":10000052,"name":"Kador","system_count":85,"constellation_count":13}
+{"region_id":10000049,"name":"Khanid","system_count":84,"constellation_count":12}
+{"region_id":10000065,"name":"Kor-Azor","system_count":61,"constellation_count":9}
+{"region_id":10000016,"name":"Lonetrek","system_count":94,"constellation_count":15}
+{"region_id":10000013,"name":"Malpais","system_count":102,"constellation_count":15}
+{"region_id":10000042,"name":"Metropolis","system_count":158,"constellation_count":23}
+{"region_id":10000028,"name":"Molden Heath","system_count":37,"constellation_count":6}
+{"region_id":10000040,"name":"Oasa","system_count":85,"constellation_count":13}
+{"region_id":10000062,"name":"Omist","system_count":43,"constellation_count":6}
+{"region_id":10000021,"name":"Outer Passage","system_count":88,"constellation_count":13}
+{"region_id":10000057,"name":"Outer Ring","system_count":59,"constellation_count":9}
+{"region_id":10000059,"name":"Paragon Soul","system_count":39,"constellation_count":6}
+{"region_id":10000063,"name":"Period Basis","system_count":40,"constellation_count":6}
+{"region_id":10000066,"name":"Perrigen Falls","system_count":104,"constellation_count":15}
+{"region_id":10000048,"name":"Placid","system_count":71,"constellation_count":11}
+{"region_id":10000070,"name":"Pochven","system_count":27,"constellation_count":3}
+{"region_id":10000047,"name":"Providence","system_count":84,"constellation_count":13}
+{"region_id":10000023,"name":"Pure Blind","system_count":85,"constellation_count":13}
+{"region_id":10000050,"name":"Querious","system_count":95,"constellation_count":14}
+{"region_id":10000008,"name":"Scalding Pass","system_count":81,"constellation_count":12}
+{"region_id":10000032,"name":"Sinq Laison","system_count":107,"constellation_count":15}
+{"region_id":10000044,"name":"Solitude","system_count":43,"constellation_count":6}
+{"region_id":10000022,"name":"Stain","system_count":132,"constellation_count":18}
+{"region_id":10000041,"name":"Syndicate","system_count":106,"constellation_count":14}
+{"region_id":10000020,"name":"Tash-Murkon","system_count":103,"constellation_count":15}
+{"region_id":10000045,"name":"Tenal","system_count":68,"constellation_count":10}
+{"region_id":10000061,"name":"Tenerifis","system_count":81,"constellation_count":12}
+{"region_id":10000038,"name":"The Bleak Lands","system_count":35,"constellation_count":5}
+{"region_id":10000033,"name":"The Citadel","system_count":81,"constellation_count":13}
+{"region_id":10000002,"name":"The Forge","system_count":88,"constellation_count":13}
+{"region_id":10000034,"name":"The Kalevala Expanse","system_count":69,"constellation_count":10}
+{"region_id":10000018,"name":"The Spire","system_count":72,"constellation_count":11}
+{"region_id":10000010,"name":"Tribute","system_count":54,"constellation_count":8}
+{"region_id":10000004,"name":"UUA-F4","system_count":107,"constellation_count":16}
+{"region_id":14000001,"name":"VR-01","system_count":40,"constellation_count":5}
+{"region_id":14000002,"name":"VR-02","system_count":40,"constellation_count":5}
+{"region_id":14000003,"name":"VR-03","system_count":40,"constellation_count":5}
+{"region_id":14000004,"name":"VR-04","system_count":40,"constellation_count":5}
+{"region_id":14000005,"name":"VR-05","system_count":40,"constellation_count":5}
+{"region_id":10000003,"name":"Vale of the Silent","system_count":118,"constellation_count":17}
+{"region_id":10000015,"name":"Venal","system_count":95,"constellation_count":14}
+{"region_id":10000068,"name":"Verge Vendor","system_count":44,"constellation_count":6}
+{"region_id":10000006,"name":"Wicked Creek","system_count":82,"constellation_count":12}
+{"region_id":10001000,"name":"Yasna Zakh","system_count":1,"constellation_count":1}

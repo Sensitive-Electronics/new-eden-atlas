@@ -1,0 +1,247 @@
+/* The ask window.
+ *
+ * Positioned against the viewport rather than inside a scrolling container,
+ * which is the lesson the rail handle already paid for: a floating panel
+ * anchored inside something that scrolls drifts away from the thing it is
+ * about, and the two engines disagree about where it went.
+ *
+ * It must also read as a *different surface* from the brief. That is not
+ * decoration - one window being visibly outside the rule that governs every
+ * other surface is what makes the boundary something a pilot can see rather
+ * than something a developer remembers. Hence the warning band, the marked
+ * figures, and a frame that does not look like a panel in the rail.
+ */
+
+.ask-layer {
+  position: fixed;
+  right: 16px;
+  /* **Bounded top and bottom, and scrollable.**
+   *
+   * Anchored only at the bottom, a second window grew upward past y = 0 - and
+   * fixed positioning does not scroll, so its header, its age line and its
+   * close button were off-screen and unreachable by any means. At four windows
+   * that is most of them. The age line is the entire reason two windows may be
+   * open at once, so losing it defeats what this step exists to deliver. */
+  top: 16px;
+  bottom: 16px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  z-index: 40;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-end;
+  /* The map stays clickable through the gaps; each window takes its own events
+   * back, and a wheel over a window still scrolls this container. */
+  pointer-events: none;
+}
+
+/* `display: flex` beats `[hidden]`, which sets `display: none` at a lower
+ * specificity, so without this the attribute is set and nothing happens. */
+.ask-layer[hidden] { display: none; }
+
+.ask-window {
+  width: min(380px, calc(100vw - 32px));
+  /* Shorter than it was, so two windows fit without either being pushed out of
+   * reach. The container scrolls if they still do not. */
+  max-height: min(46vh, 520px);
+  overflow-y: auto;
+  pointer-events: auto;
+  border: 1px solid var(--line);
+  border-top: 2px solid #b6862c;
+  background: #0a0f12;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .55);
+}
+
+.ask-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 4px 8px;
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ask-title {
+  margin: 0;
+  color: var(--muted);
+  font-size: .66rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.ask-age {
+  grid-column: 1;
+  margin: 0;
+  color: #667781;
+  font-size: .66rem;
+}
+
+.ask-close {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: 1rem/1 monospace;
+  padding: 2px 7px;
+}
+
+/* Not boilerplate, and not styled like it. A band a pilot reads once and
+ * recognises afterwards, rather than grey small print under a heading. */
+.ask-warning {
+  margin: 0;
+  padding: 8px 11px;
+  border-bottom: 1px solid var(--line);
+  background: #17120a;
+  color: #d8b364;
+  font-size: .68rem;
+  line-height: 1.45;
+}
+
+.ask-findings,
+.ask-log { padding: 9px 11px; }
+.ask-note { margin: 0; color: #667781; font-size: .7rem; }
+
+.ask-finding-list { margin: 0; padding-left: 18px; }
+.ask-finding-list > li { margin-bottom: 7px; font-size: .72rem; line-height: 1.4; }
+.ask-finding-id {
+  display: inline-block;
+  margin-right: 6px;
+  color: #667781;
+  font: .62rem monospace;
+}
+.ask-detail { display: block; color: var(--muted); font-size: .68rem; margin-top: 2px; }
+
+/* The marking is at the figure, never in a legend. A pilot deciding whether to
+ * trust a number should not have to look somewhere else to find out what kind
+ * of number it is. */
+.ask-figure { display: inline; }
+.ask-mark {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  font: .58rem/1.5 monospace;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  vertical-align: baseline;
+}
+.ask-measured > .ask-mark { background: #12251c; color: #6fb894; }
+.ask-worked > .ask-mark { background: #17120a; color: #d8b364; }
+.ask-read > .ask-mark { background: #101a25; color: #7aa5cc; }
+.ask-view > .ask-mark { background: #1c1520; color: #b48fc4; }
+
+.ask-asked {
+  margin: 8px 0 4px;
+  padding-left: 9px;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+  font-size: .72rem;
+}
+.ask-answer { margin-bottom: 10px; }
+.ask-result { margin: 0 0 8px; font-size: .72rem; line-height: 1.4; }
+.ask-result > p { margin: 0; }
+.ask-population { margin: 1px 0 3px; color: #667781; font: .64rem monospace; }
+
+/* The population, which is the point rather than the decoration: a pilot checks
+ * the model's arithmetic against these rows, and they are figures this side
+ * computed. A window that showed the result and hid these would keep the number
+ * and throw away the only thing that makes it checkable. */
+.ask-rows { margin: 0; padding: 0; list-style: none; }
+.ask-rows > li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding: 1px 0 1px 9px;
+  border-left: 1px solid var(--line);
+  font: .66rem monospace;
+  color: var(--muted);
+}
+.ask-row-where { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ask-row-value { color: #d8b364; }
+
+/* What the model named, so the pilot can see the arguments and not only the
+ * answer. `jumps_between` rendered without its route mode is the clearest case:
+ * Jita to Amarr is 11 jumps shortest and 34 high-sec-only, and a figure that
+ * does not say which is not an answer to anything. */
+.ask-operands { margin: 0 0 3px; color: #667781; font: .62rem monospace; word-break: break-word; }
+
+/* Not a footnote. These are systems the pilot put on the avoid list that the
+ * route entered anyway, and gates they marked that it had to use. */
+.ask-caveats {
+  margin: 4px 0 0;
+  padding: 5px 8px;
+  list-style: none;
+  border-left: 2px solid #b6862c;
+  background: #17120a;
+}
+.ask-caveats > li { color: #d8b364; font-size: .66rem; line-height: 1.4; }
+
+/* A refused view is said rather than left as silence. Otherwise "offered none"
+ * and "offered one we threw away" look identical, and one of them is a model
+ * tripping the same bound every time with nobody finding out. */
+.ask-refused { margin: 4px 0 0; color: #667781; font-size: .66rem; font-style: italic; }
+.ask-read { margin: 0 0 4px; font-size: .72rem; line-height: 1.4; }
+.ask-view { margin: 0; font-size: .72rem; line-height: 1.4; font-style: italic; }
+
+.ask-error {
+  margin: 0;
+  padding: 7px 11px;
+  border-top: 1px solid var(--line);
+  color: #cf6b5c;
+  font-size: .68rem;
+}
+
+.ask-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  align-items: end;
+  padding: 9px 11px;
+  border-top: 1px solid var(--line);
+}
+.ask-label {
+  grid-column: 1 / -1;
+  color: #667781;
+  font-size: .62rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.ask-input {
+  border: 1px solid var(--line);
+  background: #070b0d;
+  color: inherit;
+  font: inherit;
+  font-size: .72rem;
+  padding: 5px 6px;
+  resize: vertical;
+}
+.ask-send {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: .68rem;
+  padding: 6px 12px;
+}
+.ask-send[disabled] { cursor: default; opacity: .55; }
+
+/* The opener sits under the brief it is about. Absent when there is nothing to
+ * ask about - never present and greyed out, which invites a pilot to go looking
+ * for the thing that is not there. */
+.ask-open {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: .68rem;
+  letter-spacing: .08em;
+  padding: 7px 10px;
+  text-transform: uppercase;
+}

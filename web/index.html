@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d10">
+  <meta name="description" content="A private offline atlas of New Eden generated from CCP's Static Data Export.">
+  <title>New Eden Atlas</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='7' fill='%230a0d10'/%3E%3Cpath d='M12 43 32 9l20 34-20 12Z' fill='none' stroke='%23d9b95b' stroke-width='5'/%3E%3Ccircle cx='32' cy='33' r='5' fill='%236fe0d2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=37664a1009a6">
+  <link rel="stylesheet" href="map-edges.css?v=37664a1009a6">
+  <link rel="stylesheet" href="route.css?v=37664a1009a6">
+  <link rel="stylesheet" href="tactical.css?v=37664a1009a6">
+  <link rel="stylesheet" href="responsive.css?v=37664a1009a6">
+  <link rel="stylesheet" href="map-markers.css?v=37664a1009a6">
+  <link rel="stylesheet" href="ask.css?v=37664a1009a6">
+  <style>.constellation-ring{display:none}.inspector-empty[hidden]{display:none}</style>
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="home" type="button" aria-label="Open universe view">
+      <span class="brand-mark" aria-hidden="true"><i></i></span>
+      <span><strong>NEW EDEN ATLAS</strong><small>PRIVATE CARTOGRAPHIC ARCHIVE</small></span>
+    </button>
+    <button class="tools-toggle" id="toolsToggle" type="button" title="Open navigation and planning tools" aria-label="Open navigation and planning tools" aria-expanded="false">☰</button>
+    <nav class="view-switch" aria-label="Universe or region view">
+      <button id="universeTab" class="active" type="button">Universe</button>
+      <button id="regionTab" type="button" disabled>Region</button>
+    </nav>
+    <div class="archive-status"><i></i>OFFLINE ARCHIVE</div>
+  </header>
+
+  <main class="shell">
+    <!-- Outside the rail on purpose. It resizes the rail; it is not part of it,
+         and inside it was inside a scroll container whose overlay scrollbar is
+         painted above every DOM element and is not a DOM element itself. -->
+    <button id="railResize" class="rail-resize" type="button" role="separator"
+      aria-orientation="vertical" aria-label="Resize the region panel"
+      title="Drag to resize. Double-click to reset. Arrow keys also work."></button>
+    <aside class="rail" id="rail">
+      <div class="search-stack">
+        <label class="search">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <input id="search" autocomplete="off" spellcheck="false" placeholder="Find region or system">
+          <kbd>/</kbd>
+        </label>
+        <div id="searchResults" class="search-results" hidden></div>
+      </div>
+      <section class="route-planner" aria-label="Stargate route planner">
+        <div class="route-heading"><span>Jump calculator</span><button id="swapRoute" type="button" title="Swap origin and destination" aria-label="Swap origin and destination">⇅</button></div>
+        <div class="route-fields">
+          <input id="routeFrom" autocomplete="off" spellcheck="false" placeholder="Origin system" aria-label="Origin system">
+          <input id="routeTo" autocomplete="off" spellcheck="false" placeholder="Destination system" aria-label="Destination system">
+          <select id="routeMode" aria-label="Route preference">
+            <option value="shortest">Shortest route</option>
+            <option value="safer">Prefer high security</option>
+            <option value="high-sec-only">High security only</option>
+            <option value="less-secure">Prefer low and null security</option>
+          </select>
+        </div>
+        <details id="limitsPanel" class="route-avoid">
+          <summary id="limitsSummary">Route limits</summary>
+          <div class="route-avoid-body">
+            <div class="route-range">
+              <label>Min sec<input id="routeMinSec" type="number" min="-1" max="1" step="0.1" placeholder="any" aria-label="Minimum security status"></label>
+              <label>Max sec<input id="routeMaxSec" type="number" min="-1" max="1" step="0.1" placeholder="any" aria-label="Maximum security status"></label>
+            </div>
+            <input id="avoidSystems" autocomplete="off" spellcheck="false" placeholder="Systems to avoid" aria-label="Systems to avoid, comma separated">
+            <input id="avoidRegions" autocomplete="off" spellcheck="false" placeholder="Regions to avoid" aria-label="Regions to avoid, comma separated">
+            <p class="route-avoid-note">Security is compared against the value a system displays, so a minimum of 0.5 means high security. Avoid entries are comma separated and must each match exactly one system or region.</p>
+          </div>
+        </details>
+        <div class="route-actions">
+          <button id="calculateRoute" class="route-calculate" type="button">Plot route</button>
+          <button id="clearRoute" class="route-clear" type="button" title="Clear route highlight" aria-label="Clear route highlight">✕</button>
+        </div>
+        <p id="routeError" class="route-error" role="alert"></p>
+        <div class="route-heat">
+          <label for="routeHeat">Weigh kills</label>
+          <select id="routeHeat" aria-label="How strongly to route around recent kills">
+            <option value="off">Off</option>
+            <option value="cautious">Cautious</option>
+            <option value="paranoid">Paranoid</option>
+          </select>
+        </div>
+        <details id="bridgePanel" class="route-avoid">
+          <summary id="bridgeSummary">Ansiblex bridges</summary>
+          <div class="route-avoid-body">
+            <div class="corridor-save bridge-save">
+              <input id="bridgeFrom" autocomplete="off" spellcheck="false" placeholder="From system" aria-label="Bridge origin system">
+              <input id="bridgeTo" autocomplete="off" spellcheck="false" placeholder="To system" aria-label="Bridge destination system">
+              <button id="addBridge" class="tactical-run" type="button" title="Record a jump bridge your alliance can use">Add</button>
+            </div>
+            <p id="bridgeError" class="route-error"></p>
+            <div id="bridgeList" class="corridor-list"></div>
+          </div>
+        </details>
+        <details id="scoutPanel" class="route-avoid">
+          <summary id="scoutSummary">Wormholes</summary>
+          <div class="route-avoid-body">
+            <label class="jump-toggle"><input id="scoutEnabled" type="checkbox"> Use Thera and Turnur connections</label>
+            <div class="route-heat">
+              <label for="scoutHull">Hull</label>
+              <select id="scoutHull" aria-label="Largest hull that must fit through a connection">
+                <option value="frigate">Frigate</option>
+                <option value="medium" selected>Cruiser</option>
+                <option value="large">Battleship</option>
+                <option value="xlarge">Freighter</option>
+                <option value="capital">Capital</option>
+                <option value="active" disabled>Active ship &mdash; needs a character</option>
+              </select>
+            </div>
+            <p id="scoutError" class="route-error"></p>
+            <div id="scoutList" class="corridor-list"></div>
+            <p class="route-avoid-note">Scanned by EVE-Scout, a third party. Connections expire, collapse
+              on mass, and refuse hulls above their size - so they are off unless you ask, and a route
+              that uses one says so.</p>
+          </div>
+        </details>
+        <!-- Hidden unless the desktop shell is running. The browser tier has no
+             token surface at all - not a disabled control, not an explanation,
+             nothing. A sign-in button a page cannot honour is worse than no
+             button: it invites a pilot to look for their credentials in the one
+             place this project has decided they must never be. -->
+        <details id="vaultPanel" class="route-avoid" hidden>
+          <summary id="vaultSummary">Characters</summary>
+          <div class="route-avoid-body">
+            <p id="vaultCount" class="layout-note">No characters yet.</p>
+            <div id="vaultList" class="corridor-list"></div>
+            <p id="vaultError" class="route-error" role="status"></p>
+            <div class="tactical-actions">
+              <button id="vaultAdd" class="tactical-run" type="button">Add a character</button>
+            </div>
+            <p class="route-avoid-note">Sign-in opens your own browser at CCP's login, never a
+              window inside this application. Refresh tokens are kept by the operating system's
+              credential store, where you can see and revoke them yourself; nothing this page
+              can reach ever holds one.</p>
+          </div>
+        </details>
+        <details id="historyPanel" class="route-avoid">
+          <summary id="historySummary">Live history</summary>
+          <div class="route-avoid-body">
+            <p id="historyCount" class="layout-note">Nothing recorded yet.</p>
+            <div class="route-heat">
+              <label for="historyAge">Remove</label>
+              <select id="historyAge" aria-label="How much of the closed history to remove">
+                <option value="30">Closed over a month ago</option>
+                <option value="14">Closed over two weeks ago</option>
+                <option value="7">Closed over a week ago</option>
+                <option value="3">Closed over three days ago</option>
+                <option value="1">Closed over a day ago</option>
+                <option value="all">Every closed record</option>
+              </select>
+            </div>
+            <div class="tactical-actions">
+              <button id="clearHistory" class="tactical-run" type="button">Clear history</button>
+              <button id="exportHistory" class="tactical-icon" type="button" title="Export the closed history" aria-label="Export the closed history">&#8681;</button>
+              <button id="importHistory" class="tactical-icon" type="button" title="Import a history file" aria-label="Import a history file">&#8679;</button>
+              <input id="historyFileInput" class="tactical-file" type="file" accept="application/json,.json">
+            </div>
+            <button id="cancelClearHistory" class="tactical-run" type="button" hidden>Cancel</button>
+            <p id="historyNote" class="tactical-note"></p>
+          </div>
+        </details>
+        <details id="ignorePanel" class="route-avoid">
+          <summary id="ignoreSummary">Avoided</summary>
+          <div class="route-avoid-body">
+            <button id="avoidToggle" class="avoid-toggle" type="button" aria-pressed="true" title="Apply the avoidance list to routing">Avoidance on</button>
+            <div id="ignoreList" class="corridor-list"></div>
+          </div>
+        </details>
+        <details id="corridorPanel" class="route-avoid">
+          <summary id="corridorSummary">Corridors</summary>
+          <div class="route-avoid-body">
+            <div class="corridor-save">
+              <input id="corridorName" autocomplete="off" spellcheck="false" maxlength="60" placeholder="Corridor name" aria-label="Corridor name">
+              <button id="saveCorridor" class="tactical-run" type="button" title="Save the current route settings under this name">Save</button>
+            </div>
+            <div id="corridorList" class="corridor-list"></div>
+            <div class="tactical-actions">
+              <span class="corridor-hint">Click a corridor to load and run it.</span>
+              <button id="exportCorridors" class="tactical-icon" type="button" title="Export all corridors" aria-label="Export all corridors">⇩</button>
+              <button id="importCorridors" class="tactical-icon" type="button" title="Import corridors" aria-label="Import corridors">⇧</button>
+              <input id="corridorFile" class="tactical-file" type="file" accept="application/json,.json">
+            </div>
+            <p id="corridorError" class="route-error" role="alert"></p>
+            <p class="route-avoid-note">A corridor stores the route definition, never a computed path. Recalling one re-runs the solver against the current archive.</p>
+          </div>
+        </details>
+      </section>
+      <details id="jumpPanel" class="tactical-panel">
+        <summary>Capital jump</summary>
+        <div class="tactical-body">
+          <select id="jumpShip" aria-label="Ship"></select>
+          <div class="route-fields jump-fields">
+            <input id="jumpFrom" autocomplete="off" spellcheck="false" placeholder="Origin system" aria-label="Jump origin">
+            <input id="jumpTo" autocomplete="off" spellcheck="false" placeholder="Destination system" aria-label="Jump destination">
+          </div>
+          <div class="jump-skills jump-skills-three">
+            <label>JDC<input id="jumpCalibration" type="number" min="0" max="5" value="5" aria-label="Jump Drive Calibration level"></label>
+            <label>JFC<input id="jumpConservation" type="number" min="0" max="5" value="5" aria-label="Jump Fuel Conservation level"></label>
+            <label id="jumpHullLabel">Hull<input id="jumpHullSkill" type="number" min="0" max="5" value="5" aria-label="Hull skill level"></label>
+          </div>
+          <select id="jumpFuelModule" aria-label="Fitted fuel module"></select>
+          <p id="jumpFuelNote" class="route-avoid-note"></p>
+          <label class="jump-toggle"><input id="jumpHighSec" type="checkbox"> Show high-sec in range</label>
+          <div class="tactical-actions">
+            <button id="planJump" class="tactical-run" type="button">Plan jumps</button>
+            <button id="rangeRings" class="tactical-icon" type="button" title="Show jump range from the origin" aria-label="Show jump range from the origin" aria-pressed="false">◎</button>
+          </div>
+          <p id="jumpError" class="tactical-error" role="alert"></p>
+          <p class="route-avoid-note">Ranges and fuel come from the SDE. Fatigue uses the hull reduction from the SDE and a model for the accrual rule, which the export does not carry.</p>
+        </div>
+      </details>
+      <details id="threatPanel" class="tactical-panel">
+        <summary>Threat range</summary>
+        <div class="tactical-body">
+          <input id="threatStaging" autocomplete="off" spellcheck="false" placeholder="Hostile staging systems" aria-label="Hostile staging systems">
+          <div class="tactical-actions">
+            <button id="runThreat" class="tactical-run" type="button">Show reach</button>
+            <button id="clearThreat" class="tactical-icon" type="button" title="Clear the threat overlay" aria-label="Clear the threat overlay">✕</button>
+          </div>
+          <p id="threatError" class="tactical-error" role="alert"></p>
+          <div id="threatClasses" class="corridor-list"></div>
+          <p class="route-avoid-note">One jump from the staging listed, at maximum skills, with
+            every staging system live and no cyno jammers - which no third-party tool can detect.
+            A second jump reaches further again. Read it as reach, never as a boundary.</p>
+        </div>
+      </details>
+      <details class="tactical-panel">
+        <summary>FC brief</summary>
+        <div class="tactical-body">
+          <input id="tacticalSystem" autocomplete="off" spellcheck="false" placeholder="Focus system" aria-label="Tactical focus system">
+          <div class="tactical-row">
+            <select id="tacticalPreset" aria-label="FC objective">
+              <option value="hunt">Hunt</option>
+              <option value="escape">Escape</option>
+              <option value="recon">Recon</option>
+            </select>
+            <input id="tacticalDepth" type="number" min="1" max="10" value="4" aria-label="Analysis range in jumps" title="Analysis range in jumps">
+          </div>
+          <details class="tactical-options">
+            <summary>Report detail</summary>
+            <div class="tactical-blocks" aria-label="Tactical report blocks">
+              <label><input id="blockSecurity" type="checkbox" checked> Security</label>
+              <label><input id="blockApproaches" type="checkbox" checked> Approaches</label>
+              <label><input id="blockChokes" type="checkbox" checked> Chokes</label>
+              <label><input id="blockBorders" type="checkbox" checked> Borders</label>
+            </div>
+            <!-- Outside `tactical-blocks` on purpose: those four are the report
+                 shape and travel with an exported preset, and this one is a
+                 decision about whether a model may write a sentence under the
+                 findings. It ships off, it is stored under its own key, and an
+                 imported preset cannot reach it. -->
+            <label class="tactical-read"><input id="panelRead" type="checkbox" aria-describedby="panelReadNote"> Relation line under the findings</label>
+            <p class="tactical-note" id="panelReadNote">Off by default. When on, and only if the
+              local advisor is running, the brief may carry one sentence naming how the listed
+              systems relate - region, constellation, adjacency or security band. Every word of it
+              is written by this application. The advisor chooses which relation to claim; the
+              claim must be true, and must be true of <em>every</em> system the brief lists, or no
+              sentence is shown at all.</p>
+          </details>
+          <div class="tactical-actions">
+            <button id="runTactical" class="tactical-run" type="button">Build brief</button>
+            <button id="exportTactical" class="tactical-icon" type="button" title="Export tactical preset" aria-label="Export tactical preset">⇩</button>
+            <button id="importTactical" class="tactical-icon" type="button" title="Import tactical preset" aria-label="Import tactical preset">⇧</button>
+            <input id="tacticalFile" class="tactical-file" type="file" accept="application/json,.json">
+          </div>
+          <p id="tacticalError" class="tactical-error" role="alert"></p>
+        </div>
+      </details>
+      <div class="rail-title"><span>Region index</span><span id="regionCount">0</span></div>
+      <div id="regions" class="region-list"></div>
+      <footer>CCP STATIC DATA EXPORT<br><span>Stargate topology · local copy</span>
+        <p class="notice">New Eden Atlas by Sensitive Electronics, author Shadowglyph.
+        This is an unofficial tool, not affiliated with or endorsed by CCP Games.</p>
+        <!-- Verbatim from section 7.1 of CCP's Developer License Agreement, which prescribes
+             the wording rather than the sentiment. The year is CCP's and is left alone: the
+             clause supplies the text, so "updating" it would be editing a quotation. The line
+             above it is ours and goes beyond what is asked - section 2.7 only forbids holding
+             yourself out as CCP - because somebody installing a binary should not have to
+             work out whose product it is. No CCP logo or image appears anywhere in this
+             application, which is what keeps section 7.3 out of the question entirely. -->
+        <p class="notice">© 2014 CCP hf. All rights reserved. "EVE", "EVE Online", "CCP", and all related logos and images are trademarks or registered trademarks of CCP hf.</p>
+      </footer>
+    </aside>
+
+    <section class="workspace">
+      <header class="map-header">
+        <div><div id="eyebrow" class="eyebrow">NEW EDEN / KNOWN SPACE</div><h1 id="title">Universe overview</h1></div>
+        <div id="metrics" class="metrics"></div>
+      </header>
+      <div class="map-stage">
+        <svg id="map" viewBox="0 0 1200 760" role="img" aria-label="Interactive map of New Eden">
+          <defs>
+            <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#33404a" stroke-width=".45"></path></pattern>
+          </defs>
+          <rect width="1200" height="760" fill="url(#grid)" opacity=".28"></rect>
+          <g id="viewport"></g>
+        </svg>
+        <div id="loading" class="loading"><span></span>Reading cartographic archive</div>
+        <div class="map-tools"><button id="zoomIn" title="Zoom in">+</button><button id="zoomOut" title="Zoom out">−</button><button id="reset" title="Reset view">⌖</button></div>
+        <div id="legend" class="legend"></div>
+        <div id="coordinates" class="coordinates">X 000 · Y 000</div>
+      </div>
+      <div id="liveBar" class="layout-bar">
+        <span class="layout-label">Live</span>
+        <button id="liveSync" type="button" title="Fetch sovereignty, ambient state and activity">Sync</button>
+        <span id="sovBar" class="live-layer"><span id="sovAge" class="layout-note">sov: never synced</span></span>
+        <span id="ambientBar" class="live-layer"><span id="ambientAge" class="layout-note">ambient: never synced</span></span>
+        <span id="activityBar" class="live-layer"><span id="activityAge" class="layout-note">activity: never synced</span></span>
+        <span id="campaignBar" class="live-layer"><span id="campaignAge" class="layout-note">timers: never synced</span></span>
+        <span id="scoutBar" class="live-layer" hidden><span id="scoutAge" class="layout-note">holes: off</span></span>
+        <span id="liveError" class="layout-note sov-error"></span>
+        <span id="persistError" class="layout-note sov-error"></span>
+        <span id="sovError" class="layout-note sov-error" hidden></span>
+        <span id="ambientError" class="layout-note sov-error" hidden></span>
+        <button id="sovSync" type="button" hidden>Sync</button>
+        <button id="ambientSync" type="button" hidden>Sync</button>
+      </div>
+      <div id="layoutBar" class="layout-bar" hidden>
+        <span class="layout-label">Layout</span>
+        <button id="layoutAtlas" type="button" data-layout="atlas" aria-pressed="true">Atlas schematic</button>
+        <button id="layoutCcp" type="button" data-layout="ccp" aria-pressed="false">CCP 2D</button>
+        <span id="layoutNote" class="layout-note"></span>
+      </div>
+      <div id="constellations" class="constellations" hidden></div>
+    </section>
+
+    <aside id="inspector" class="inspector">
+      <button id="inspectorClose" class="inspector-close" type="button" title="Close inspector" aria-label="Close inspector">×</button>
+      <div id="emptyInspector" class="inspector-empty"><span class="reticle"></span><h2>Pick a system or region</h2><p>Click one on the map or search for it, and its intel lands here.</p></div>
+      <div id="inspectorContent" hidden></div>
+    </aside>
+  </main>
+  <!-- The ask windows live outside `main` on purpose. A floating panel is the
+       same class of problem the rail handle turned out to be - hit areas,
+       containment, stacking - and the lesson already paid for is to position
+       against a containing block rather than inside a scroll container. `main`
+       scrolls; this does not. -->
+  <div id="askLayer" class="ask-layer" hidden></div>
+  <div id="tooltip" class="tooltip" hidden></div>
+  <!-- No hand-written cache-buster. `` was here from the first day
+       and was never bumped, which is worse than having none: a constant query
+       string does not break a cache, it PINS one. The URL never changes, so the
+       file can never invalidate, and an edit to app.js is served as whatever
+       was cached the first time.
+       It cost an evening: a new index.html carrying a new panel was loaded
+       alongside a cached app.js with no code to show it, so every static check
+       passed and the panel was invisible.
+       Without the query the URL is just app.js, and ordinary HTTP caching
+       applies - Last-Modified from the dev server, the asset protocol in the
+       shell - both of which notice a file changing. The same constant was
+       removed from the archive URLs after it caused the same class of bug
+       there; this one survived because nobody looked at the script tag. -->
+  <script type="module" src="app.js?v=37664a1009a6"></script>
+</body>
+</html>

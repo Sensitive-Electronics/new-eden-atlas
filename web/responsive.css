@@ -1,0 +1,144 @@
+.tools-toggle {
+  display: none;
+}
+
+.search-stack {
+  position: sticky;
+  top: -14px;
+  z-index: 15;
+  margin-top: -14px;
+  padding-top: 14px;
+  background: var(--panel);
+}
+
+.search-stack .search-results {
+  top: 56px;
+  left: 0;
+  right: 0;
+}
+
+#routeMode {
+  font-size: .76rem;
+}
+
+.inspector-close {
+  display: none;
+}
+
+/* One rule, one range. The inspector becomes an overlay at 1050px and narrower
+   (styles.css), but this control was previously turned on only at 1051-1200px
+   and at 760px and narrower - two byte-identical copies of the rule below, with
+   761-1050px falling between them. In that band the inspector covered the map
+   with its close button still display:none, so it had no bounds to click and
+   a pilot on a touch screen had only the Escape key. The range below covers every
+   which the control is wanted, continuously. */
+@media (max-width: 1200px) {
+  .inspector-close {
+    position: sticky;
+    top: 10px;
+    z-index: 4;
+    float: right;
+    display: grid;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px -40px 0;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: #0b1014e8;
+    color: var(--muted);
+    cursor: pointer;
+    font: 1rem/1 monospace;
+  }
+}
+
+/* Keep the source note in normal flow and reserve the remaining rail height for
+   the index. The flex and overflow half of this moved to styles.css, beside the
+   rest of `.rail`: it was never responsive, and having it here meant the rail's
+   overflow was decided by link order between two files. */
+.rail { padding-bottom: 12px; }
+
+.rail > :not(.region-list) {
+  flex: 0 0 auto;
+}
+
+/* Reserve the remaining rail height for the index, which is what makes it
+   shrink to fit and scroll inside itself rather than pushing the rail taller
+   than its row. */
+.region-list {
+  flex: 1 1 auto;
+  min-height: 80px;
+  height: auto;
+}
+
+.rail footer {
+  position: static;
+  margin: 9px 5px 0;
+}
+
+@media (max-width: 1200px) and (min-width: 1051px) {
+  .shell {
+    grid-template-columns: 230px minmax(420px, 1fr);
+  }
+
+  .inspector {
+    position: absolute;
+    right: 0;
+    top: 68px;
+    bottom: 0;
+    width: 285px;
+    z-index: 8;
+    box-shadow: -12px 0 30px #0008;
+    transform: translateX(100%);
+    transition: transform .2s;
+  }
+
+  .inspector.open {
+    transform: translateX(0);
+  }
+
+
+  .topbar {
+    grid-template-columns: 230px 1fr auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    grid-template-columns: 1fr auto auto;
+    gap: 8px;
+  }
+
+  .tools-toggle {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: var(--panel2);
+    color: var(--text);
+    cursor: pointer;
+    font: 1.1rem/1 monospace;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand strong {
+    white-space: nowrap;
+  }
+
+  .view-switch button {
+    min-width: 66px;
+  }
+
+  .rail:hover {
+    transform: translateX(calc(-100% + 7px));
+  }
+
+  .rail.open,
+  .rail:focus-within {
+    transform: translateX(0);
+  }
+
+}

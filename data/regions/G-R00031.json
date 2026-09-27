@@ -1,0 +1,65 @@
+{
+  "region": {
+    "region_id": 11000031,
+    "name": "G-R00031",
+    "constellation_ids": [
+      21000324
+    ],
+    "position": [
+      7.2055e+18,
+      1.5393e+18,
+      -9.5384e+18
+    ],
+    "systems": [
+      31000005
+    ],
+    "constellations": [
+      21000324
+    ],
+    "system_count": 1,
+    "position_2d": null,
+    "bounds_2d": null
+  },
+  "constellations": {
+    "21000324": {
+      "constellation_id": 21000324,
+      "region_id": 11000031,
+      "name": "G-C00324",
+      "solar_system_ids": [
+        31000005
+      ],
+      "position": [
+        7.2058e+18,
+        1.5393e+18,
+        -9.5151e+18
+      ],
+      "position_2d": null,
+      "bounds_2d": null
+    }
+  },
+  "systems": {
+    "31000005": {
+      "system_id": 31000005,
+      "name": "Thera",
+      "region_id": 11000031,
+      "constellation_id": 21000324,
+      "security": -0.99,
+      "position": [
+        7.201177e+18,
+        1.5343e+18,
+        -9.501332482538404e+18
+      ],
+      "position_2d": null,
+      "npc_stations": 4,
+      "neighbors": [],
+      "metrics": {
+        "degree": 0,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": -1,
+        "component_size": 0
+      }
+    }
+  },
+  "jumps": []
+}

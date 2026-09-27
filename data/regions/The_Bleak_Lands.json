@@ -1,0 +1,1564 @@
+{
+  "region": {
+    "region_id": 10000038,
+    "name": "The Bleak Lands",
+    "constellation_ids": [
+      20000448,
+      20000449,
+      20000450,
+      20000451,
+      20000452
+    ],
+    "position": [
+      -1.5917223051659846e+17,
+      3.138851058813296e+16,
+      -5.093675036537755e+16
+    ],
+    "systems": [
+      30003071,
+      30003093,
+      30003078,
+      30003095,
+      30003076,
+      30003085,
+      30003087,
+      30003082,
+      30003067,
+      30003072,
+      30003094,
+      30003080,
+      30003083,
+      30003069,
+      30003092,
+      30003068,
+      30003066,
+      30003096,
+      30003089,
+      30003063,
+      30003084,
+      30003075,
+      30003073,
+      30003065,
+      30003088,
+      30003081,
+      30003086,
+      30003090,
+      30003079,
+      30003074,
+      30003097,
+      30003070,
+      30003091,
+      30003064,
+      30003077
+    ],
+    "constellations": [
+      20000450,
+      20000452,
+      20000448,
+      20000451,
+      20000449
+    ],
+    "system_count": 35,
+    "position_2d": [
+      -6163396015407696.0,
+      -3.287144541550771e+16
+    ],
+    "bounds_2d": [
+      -2.876251473856925e+16,
+      -6.163396015407696e+16,
+      1.6435722707753856e+16,
+      -4108930676938464.0
+    ]
+  },
+  "constellations": {
+    "20000450": {
+      "constellation_id": 20000450,
+      "region_id": 10000038,
+      "name": "Ichida",
+      "solar_system_ids": [
+        30003080,
+        30003081,
+        30003082,
+        30003083,
+        30003084,
+        30003085
+      ],
+      "position": [
+        -1.4351005363255656e+17,
+        6.107320126385917e+16,
+        -6.901191922536963e+16
+      ],
+      "position_2d": [
+        2054465338469232.0,
+        -1.540849003851924e+16
+      ],
+      "bounds_2d": [
+        -6163396015407696.0,
+        -2.259911872316155e+16,
+        1.027232669234616e+16,
+        -8217861353876928.0
+      ]
+    },
+    "20000452": {
+      "constellation_id": 20000452,
+      "region_id": 10000038,
+      "name": "Ohvarainen",
+      "solar_system_ids": [
+        30003092,
+        30003093,
+        30003094,
+        30003095,
+        30003096,
+        30003097
+      ],
+      "position": [
+        -1.748344074006404e+17,
+        2.8272186960028584e+16,
+        -4.446887675348592e+16
+      ],
+      "position_2d": [
+        -1.540849003851924e+16,
+        -5.341609880020003e+16
+      ],
+      "bounds_2d": [
+        -2.259911872316155e+16,
+        -6.163396015407696e+16,
+        -8217861353876928.0,
+        -4.51982374463231e+16
+      ]
+    },
+    "20000448": {
+      "constellation_id": 20000448,
+      "region_id": 10000038,
+      "name": "Sasen",
+      "solar_system_ids": [
+        30003063,
+        30003064,
+        30003065,
+        30003066,
+        30003067,
+        30003068,
+        30003069
+      ],
+      "position": [
+        -1.4487749680007757e+17,
+        5.785808611970901e+16,
+        -4.8618946556037704e+16
+      ],
+      "position_2d": [
+        8217861353876928.0,
+        -3.595314342321156e+16
+      ],
+      "bounds_2d": [
+        0.0,
+        -4.314377210785387e+16,
+        1.6435722707753856e+16,
+        -2.876251473856925e+16
+      ]
+    },
+    "20000451": {
+      "constellation_id": 20000451,
+      "region_id": 10000038,
+      "name": "Tandoiras",
+      "solar_system_ids": [
+        30003086,
+        30003087,
+        30003088,
+        30003089,
+        30003090,
+        30003091
+      ],
+      "position": [
+        -1.6450706791375152e+17,
+        1703819912406752.0,
+        -3.2861581505385484e+16
+      ],
+      "position_2d": [
+        -1.9517420715457704e+16,
+        -1.027232669234616e+16
+      ],
+      "bounds_2d": [
+        -2.876251473856925e+16,
+        -1.6435722707753856e+16,
+        -1.027232669234616e+16,
+        -4108930676938464.0
+      ]
+    },
+    "20000449": {
+      "constellation_id": 20000449,
+      "region_id": 10000038,
+      "name": "Vaarma",
+      "solar_system_ids": [
+        30003070,
+        30003071,
+        30003072,
+        30003073,
+        30003074,
+        30003075,
+        30003076,
+        30003077,
+        30003078,
+        30003079
+      ],
+      "position": [
+        -1.5632352300754352e+17,
+        3.7113200248594696e+16,
+        -5.018303591402107e+16
+      ],
+      "position_2d": [
+        -1.3354024700050008e+16,
+        -3.081698007703848e+16
+      ],
+      "bounds_2d": [
+        -2.259911872316155e+16,
+        -3.903484143091541e+16,
+        -4108930676938464.0,
+        -2.259911872316155e+16
+      ]
+    }
+  },
+  "systems": {
+    "30003071": {
+      "system_id": 30003071,
+      "name": "Anka",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.4146,
+      "position": [
+        -1.4945594553861578e+17,
+        4.889118078909181e+16,
+        -4.773928503748523e+16
+      ],
+      "position_2d": [
+        -8217861353876928.0,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003076,
+        30003072,
+        30003070,
+        30003091
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 272889.735,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003093": {
+      "system_id": 30003093,
+      "name": "Ayeroilen",
+      "region_id": 10000038,
+      "constellation_id": 20000452,
+      "security": 0.446568,
+      "position": [
+        -1.683194721559271e+17,
+        2.3672590801157796e+16,
+        -4.056666034718001e+16
+      ],
+      "position_2d": [
+        -1.849018804622309e+16,
+        -4.51982374463231e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003094,
+        30003092
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 15672.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003078": {
+      "system_id": 30003078,
+      "name": "Erkinen",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.592004,
+      "position": [
+        -1.6961462712528982e+17,
+        4.203854886170401e+16,
+        -4.5610590347794024e+16
+      ],
+      "position_2d": [
+        -1.027232669234616e+16,
+        -3.903484143091541e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003092,
+        30003077
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 31326.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003095": {
+      "system_id": 30003095,
+      "name": "Furskeshin",
+      "region_id": 10000038,
+      "constellation_id": 20000452,
+      "security": 0.605503,
+      "position": [
+        -1.7641992903965418e+17,
+        2.4710145008911656e+16,
+        -4.837109315979182e+16
+      ],
+      "position_2d": [
+        -2.259911872316155e+16,
+        -5.547056413866926e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003094,
+        30003097
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003076": {
+      "system_id": 30003076,
+      "name": "Gammel",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.465589,
+      "position": [
+        -1.5052149388579808e+17,
+        5.254915039866209e+16,
+        -5.259696588565931e+16
+      ],
+      "position_2d": [
+        -4108930676938464.0,
+        -2.876251473856925e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003071,
+        30003081,
+        30003070
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 167137.206,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003085": {
+      "system_id": 30003085,
+      "name": "Hakodan",
+      "region_id": 10000038,
+      "constellation_id": 20000450,
+      "security": 0.726668,
+      "position": [
+        -1.4226482210259659e+17,
+        6.955642435827596e+16,
+        -6.4934341773262e+16
+      ],
+      "position_2d": [
+        4108930676938464.0,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003082,
+        30003081
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003087": {
+      "system_id": 30003087,
+      "name": "Haras",
+      "region_id": 10000038,
+      "constellation_id": 20000451,
+      "security": 0.279962,
+      "position": [
+        -1.721385196144633e+17,
+        2287187465318103.0,
+        -3.8217761062498104e+16
+      ],
+      "position_2d": [
+        -2.4653584061630784e+16,
+        -1.2326792030815392e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003086
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003082": {
+      "system_id": 30003082,
+      "name": "Hatori",
+      "region_id": 10000038,
+      "constellation_id": 20000450,
+      "security": 0.57282,
+      "position": [
+        -1.4225883364418472e+17,
+        5.534709836416846e+16,
+        -6.6493253762934e+16
+      ],
+      "position_2d": [
+        4108930676938464.0,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003085,
+        30003084,
+        30003081
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 5226.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003067": {
+      "system_id": 30003067,
+      "name": "Huola",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.370249,
+      "position": [
+        -1.3965828300036011e+17,
+        4.700036988383117e+16,
+        -3.5883792461355764e+16
+      ],
+      "position_2d": [
+        1.4381257369284624e+16,
+        -3.287144541550771e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003068,
+        30003065,
+        30002975
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 1077001.745,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003072": {
+      "system_id": 30003072,
+      "name": "Iesa",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.413819,
+      "position": [
+        -1.5580797852672195e+17,
+        3.783196191817708e+16,
+        -4.930095583798636e+16
+      ],
+      "position_2d": [
+        -1.4381257369284624e+16,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003071,
+        30003073,
+        30003077
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 9817.232,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003094": {
+      "system_id": 30003094,
+      "name": "Imata",
+      "region_id": 10000038,
+      "constellation_id": 20000452,
+      "security": 0.488355,
+      "position": [
+        -1.7401303955317658e+17,
+        1.8810769897768732e+16,
+        -4.264549780947515e+16
+      ],
+      "position_2d": [
+        -2.259911872316155e+16,
+        -4.930716812326157e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003093,
+        30003095
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 10450.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003080": {
+      "system_id": 30003080,
+      "name": "Jarkkolen",
+      "region_id": 10000038,
+      "constellation_id": 20000450,
+      "security": 0.820601,
+      "position": [
+        -1.444423403858877e+17,
+        7.08830706921744e+16,
+        -7.64870567094455e+16
+      ],
+      "position_2d": [
+        -4108930676938464.0,
+        -1.4381257369284624e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002994,
+        30003083,
+        30003081
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 156567.848,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003083": {
+      "system_id": 30003083,
+      "name": "Junsen",
+      "region_id": 10000038,
+      "constellation_id": 20000450,
+      "security": 0.809591,
+      "position": [
+        -1.401913588038719e+17,
+        7.362180096994915e+16,
+        -7.1245375155066216e+16
+      ],
+      "position_2d": [
+        -6163396015407696.0,
+        -8217861353876928.0
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003080
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003069": {
+      "system_id": 30003069,
+      "name": "Kamela",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.440866,
+      "position": [
+        -1.3677649551118062e+17,
+        5.259278946764716e+16,
+        -4.372972514451311e+16
+      ],
+      "position_2d": [
+        0.0,
+        -3.4925910753976944e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002965,
+        30003068,
+        30003063,
+        30002970,
+        30003070,
+        30003064
+      ],
+      "metrics": {
+        "degree": 6,
+        "betweenness": 348781.692,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003092": {
+      "system_id": 30003092,
+      "name": "Komaa",
+      "region_id": 10000038,
+      "constellation_id": 20000452,
+      "security": 0.556722,
+      "position": [
+        -1.6943226605681757e+17,
+        3.53785507501808e+16,
+        -4.576509478459759e+16
+      ],
+      "position_2d": [
+        -1.2326792030815392e+16,
+        -4.51982374463231e+16
+      ],
+      "npc_stations": 11,
+      "neighbors": [
+        30003093,
+        30003078,
+        30003096
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 26114.0,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003068": {
+      "system_id": 30003068,
+      "name": "Kourmonen",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.36348,
+      "position": [
+        -1.3714486663497122e+17,
+        4.2128767386892e+16,
+        -3.285401132864559e+16
+      ],
+      "position_2d": [
+        8217861353876928.0,
+        -2.876251473856925e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30002542,
+        30003067,
+        30003069,
+        30003063
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 857483.512,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003066": {
+      "system_id": 30003066,
+      "name": "Kuomi",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.567863,
+      "position": [
+        -1.4820806555014256e+17,
+        6.718322818202729e+16,
+        -5.435627420932785e+16
+      ],
+      "position_2d": [
+        1.2326792030815392e+16,
+        -4.314377210785387e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003065,
+        30003064
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 14553.974,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003096": {
+      "system_id": 30003096,
+      "name": "Kurmaru",
+      "region_id": 10000038,
+      "constellation_id": 20000452,
+      "security": 0.619121,
+      "position": [
+        -1.7182475087274422e+17,
+        3.773360402228844e+16,
+        -4.793937238468866e+16
+      ],
+      "position_2d": [
+        -8217861353876928.0,
+        -4.930716812326157e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003092
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003089": {
+      "system_id": 30003089,
+      "name": "Kurniainen",
+      "region_id": 10000038,
+      "constellation_id": 20000451,
+      "security": 0.114374,
+      "position": [
+        -1.591620744146072e+17,
+        -5793958536537446.0,
+        -2.3811668869817484e+16
+      ],
+      "position_2d": [
+        -2.259911872316155e+16,
+        -6163396015407696.0
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30002087,
+        30003088,
+        30003090
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 899309.696,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003063": {
+      "system_id": 30003063,
+      "name": "Lamaa",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.355271,
+      "position": [
+        -1.3650408686004696e+17,
+        3.2772030526736908e+16,
+        -4.2199968266481304e+16
+      ],
+      "position_2d": [
+        2054465338469232.0,
+        -2.876251473856925e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003069,
+        30003068,
+        30002957
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 9332.005,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003084": {
+      "system_id": 30003084,
+      "name": "Malpara",
+      "region_id": 10000038,
+      "constellation_id": 20000450,
+      "security": 0.474424,
+      "position": [
+        -1.468287484612412e+17,
+        4.8524601557769176e+16,
+        -6.153678174129376e+16
+      ],
+      "position_2d": [
+        1.027232669234616e+16,
+        -1.2326792030815392e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003082
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003075": {
+      "system_id": 30003075,
+      "name": "Myyhera",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.481707,
+      "position": [
+        -1.6370731442883226e+17,
+        3.0774418132873748e+16,
+        -5.594687205996486e+16
+      ],
+      "position_2d": [
+        -2.054465338469232e+16,
+        -3.287144541550771e+16
+      ],
+      "npc_stations": 5,
+      "neighbors": [
+        30003073,
+        30003079,
+        30003074
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 7063.915,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003073": {
+      "system_id": 30003073,
+      "name": "Netsalakka",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.483956,
+      "position": [
+        -1.5892964277067094e+17,
+        4.171998121373172e+16,
+        -5.66935901673956e+16
+      ],
+      "position_2d": [
+        -1.849018804622309e+16,
+        -2.6708049400100016e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003072,
+        30003075,
+        30003074
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 11.5,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003065": {
+      "system_id": 30003065,
+      "name": "Otelen",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.784819,
+      "position": [
+        -1.5325090674010816e+17,
+        8.29441417126811e+16,
+        -6.4383881783429816e+16
+      ],
+      "position_2d": [
+        1.6435722707753856e+16,
+        -3.903484143091541e+16
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30003067,
+        30003066,
+        30003520
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 1085735.917,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003088": {
+      "system_id": 30003088,
+      "name": "Oyonata",
+      "region_id": 10000038,
+      "constellation_id": 20000451,
+      "security": 0.258891,
+      "position": [
+        -1.5748458506109238e+17,
+        1.3043419026976106e+16,
+        -3.8164560155995736e+16
+      ],
+      "position_2d": [
+        -1.849018804622309e+16,
+        -1.027232669234616e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003089,
+        30003086,
+        30002980
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 812106.455,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003081": {
+      "system_id": 30003081,
+      "name": "Ronne",
+      "region_id": 10000038,
+      "constellation_id": 20000450,
+      "security": 0.724134,
+      "position": [
+        -1.4475290155002432e+17,
+        6.549028746403505e+16,
+        -6.8509157234435064e+16
+      ],
+      "position_2d": [
+        -0.0,
+        -1.849018804622309e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003076,
+        30003085,
+        30003082,
+        30003080
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 168173.103,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003086": {
+      "system_id": 30003086,
+      "name": "Sahtogas",
+      "region_id": 10000038,
+      "constellation_id": 20000451,
+      "security": 0.279867,
+      "position": [
+        -1.607149096640146e+17,
+        1.148930001103365e+16,
+        -4.100270693769536e+16
+      ],
+      "position_2d": [
+        -1.849018804622309e+16,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003087,
+        30003088,
+        30003079,
+        30003091
+      ],
+      "metrics": {
+        "degree": 4,
+        "betweenness": 290069.378,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003090": {
+      "system_id": 30003090,
+      "name": "Saidusairos",
+      "region_id": 10000038,
+      "constellation_id": 20000451,
+      "security": 0.104733,
+      "position": [
+        -1.6352018613537558e+17,
+        -9635779202162600.0,
+        -2.156999352333355e+16
+      ],
+      "position_2d": [
+        -2.876251473856925e+16,
+        -4108930676938464.0
+      ],
+      "npc_stations": 0,
+      "neighbors": [
+        30002653,
+        30003089
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 87939.819,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003079": {
+      "system_id": 30003079,
+      "name": "Saikamon",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.412492,
+      "position": [
+        -1.6386344104614538e+17,
+        2.1677250098527304e+16,
+        -4.913178924163765e+16
+      ],
+      "position_2d": [
+        -2.259911872316155e+16,
+        -2.259911872316155e+16
+      ],
+      "npc_stations": 2,
+      "neighbors": [
+        30003075,
+        30003086
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 8246.359,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003074": {
+      "system_id": 30003074,
+      "name": "Sasiekko",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.542635,
+      "position": [
+        -1.6507372764022195e+17,
+        3.769687570439011e+16,
+        -6.022515483286214e+16
+      ],
+      "position_2d": [
+        -1.4381257369284624e+16,
+        -3.4925910753976944e+16
+      ],
+      "npc_stations": 3,
+      "neighbors": [
+        30003075,
+        30003073,
+        30003070
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 6458.717,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003097": {
+      "system_id": 30003097,
+      "name": "Satalama",
+      "region_id": 10000038,
+      "constellation_id": 20000452,
+      "security": 0.660755,
+      "position": [
+        -1.8134934264535363e+17,
+        2.4712201242491228e+16,
+        -4.5863621112197e+16
+      ],
+      "position_2d": [
+        -2.259911872316155e+16,
+        -6.163396015407696e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003095
+      ],
+      "metrics": {
+        "degree": 1,
+        "betweenness": 0.0,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003070": {
+      "system_id": 30003070,
+      "name": "Sosala",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.420527,
+      "position": [
+        -1.4303241888979723e+17,
+        4.99884289062394e+16,
+        -4.7606141152822456e+16
+      ],
+      "position_2d": [
+        -8217861353876928.0,
+        -3.287144541550771e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003071,
+        30003076,
+        30003069,
+        30003074,
+        30003077
+      ],
+      "metrics": {
+        "degree": 5,
+        "betweenness": 142795.569,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003091": {
+      "system_id": 30003091,
+      "name": "Tannakan",
+      "region_id": 10000038,
+      "constellation_id": 20000451,
+      "security": 0.247082,
+      "position": [
+        -1.5687561621303974e+17,
+        9729804376800062.0,
+        -4.4153169487437416e+16
+      ],
+      "position_2d": [
+        -1.027232669234616e+16,
+        -1.6435722707753856e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003071,
+        30003086
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 272166.269,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003064": {
+      "system_id": 30003064,
+      "name": "Tuomuta",
+      "region_id": 10000038,
+      "constellation_id": 20000448,
+      "security": 0.453749,
+      "position": [
+        -1.439872028248173e+17,
+        6.220247112491925e+16,
+        -4.690080888472223e+16
+      ],
+      "position_2d": [
+        4108930676938464.0,
+        -4.314377210785387e+16
+      ],
+      "npc_stations": 1,
+      "neighbors": [
+        30003069,
+        30003066
+      ],
+      "metrics": {
+        "degree": 2,
+        "betweenness": 15495.225,
+        "articulation": false,
+        "component": 0,
+        "component_size": 5228
+      }
+    },
+    "30003077": {
+      "system_id": 30003077,
+      "name": "Uusanen",
+      "region_id": 10000038,
+      "constellation_id": 20000449,
+      "security": 0.402339,
+      "position": [
+        -1.5913300022794726e+17,
+        3.685103244518024e+16,
+        -4.014091699517999e+16
+      ],
+      "position_2d": [
+        -1.2326792030815392e+16,
+        -2.876251473856925e+16
+      ],
+      "npc_stations": 4,
+      "neighbors": [
+        30003078,
+        30003072,
+        30003070
+      ],
+      "metrics": {
+        "degree": 3,
+        "betweenness": 37706.84,
+        "articulation": true,
+        "component": 0,
+        "component_size": 5228
+      }
+    }
+  },
+  "jumps": [
+    {
+      "from_system_id": 30003063,
+      "to_system_id": 30003068,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.4,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003063,
+      "to_system_id": 30003069,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 2.101,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003064,
+      "to_system_id": 30003066,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.047,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003064,
+      "to_system_id": 30003069,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.313,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003065,
+      "to_system_id": 30003066,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 2.045,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003065,
+      "to_system_id": 30003067,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 5.057,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003067,
+      "to_system_id": 30003068,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.662,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003068,
+      "to_system_id": 30003069,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.596,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003069,
+      "to_system_id": 30003070,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.825,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003070,
+      "to_system_id": 30003071,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.689,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003070,
+      "to_system_id": 30003074,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 2.982,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003070,
+      "to_system_id": 30003076,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.989,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003070,
+      "to_system_id": 30003077,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 2.334,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003071,
+      "to_system_id": 30003072,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.358,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003071,
+      "to_system_id": 30003076,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.653,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003072,
+      "to_system_id": 30003073,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.943,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003072,
+      "to_system_id": 30003077,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.035,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003073,
+      "to_system_id": 30003074,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.861,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003073,
+      "to_system_id": 30003075,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.265,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003074,
+      "to_system_id": 30003075,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.872,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003075,
+      "to_system_id": 30003079,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.202,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003076,
+      "to_system_id": 30003081,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 2.252,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003077,
+      "to_system_id": 30003078,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.365,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003078,
+      "to_system_id": 30003092,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.704,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003080,
+      "to_system_id": 30003081,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.018,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003080,
+      "to_system_id": 30003083,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.77,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003081,
+      "to_system_id": 30003082,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.124,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003081,
+      "to_system_id": 30003085,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.63,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003082,
+      "to_system_id": 30003084,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.014,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003082,
+      "to_system_id": 30003085,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.511,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003079,
+      "to_system_id": 30003086,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.417,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003086,
+      "to_system_id": 30003087,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.578,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003086,
+      "to_system_id": 30003088,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.483,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003086,
+      "to_system_id": 30003091,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.557,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003088,
+      "to_system_id": 30003089,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 2.509,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003089,
+      "to_system_id": 30003090,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.658,
+      "bridge": false
+    },
+    {
+      "from_system_id": 30003092,
+      "to_system_id": 30003093,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 1.359,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003092,
+      "to_system_id": 30003096,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.423,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003093,
+      "to_system_id": 30003094,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.821,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003094,
+      "to_system_id": 30003095,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.905,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003095,
+      "to_system_id": 30003097,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 0.585,
+      "bridge": true
+    },
+    {
+      "from_system_id": 30003071,
+      "to_system_id": 30003091,
+      "from_region_id": 10000038,
+      "to_region_id": 10000038,
+      "distance_ly": 4.23,
+      "bridge": false
+    }
+  ]
+}
